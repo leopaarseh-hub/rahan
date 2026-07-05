@@ -29,6 +29,11 @@ export const LeafIcon      = base(<><path d="M17 8C8 10 5.9 16.17 3.82 19.5c.85.
 export const PackageIcon   = base(<><polyline points="16.5 9.4 7.5 4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></>);
 export const CheckCircleIcon=base(<><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>);
 export const CrownIcon     = base(<><path d="M3 18h18"/><path d="M4 15l-1-8 5 3.5L12 4l4 6.5L21 7l-1 8H4z"/></>);
+export const SaffronIcon   = base(<><circle cx="12" cy="12" r="2.4"/><path d="M12 9.6V4M12 14.4V20M9.6 12H4M14.4 12H20M10.3 10.3L6.4 6.4M13.7 13.7l3.9 3.9M13.7 10.3l3.9-3.9M10.3 13.7l-3.9 3.9"/></>);
+export const WheatIcon     = base(<><path d="M12 22V7"/><path d="M12 7c-2.8 0-4.6-1.9-4.6-4.6C10.1 2.4 12 4.3 12 7z"/><path d="M12 7c2.8 0 4.6-1.9 4.6-4.6C13.9 2.4 12 4.3 12 7z"/><path d="M12 13c-2.8 0-4.6-1.9-4.6-4.6C10.1 8.4 12 10.3 12 13z"/><path d="M12 13c2.8 0 4.6-1.9 4.6-4.6C13.9 8.4 12 10.3 12 13z"/></>);
+export const TeapotIcon    = base(<><path d="M5 11h11v4.5A5.5 5.5 0 0110.5 21h0A5.5 5.5 0 015 15.5V11z"/><path d="M16 12h1.5a2.5 2.5 0 010 5H16"/><path d="M8 8c0-1.2 1-1.4 1-2.6M12.5 8c0-1.2 1-1.4 1-2.6"/></>);
+export const HoneyIcon     = base(<path d="M12 3.5c3.3 4.2 5.6 7.2 5.6 10.2a5.6 5.6 0 11-11.2 0c0-3 2.3-6 5.6-10.2z"/>);
+export const BreadIcon     = base(<><path d="M4.5 10.5A3.5 3.5 0 018 7h8a3.5 3.5 0 013.5 3.5 2.6 2.6 0 01-1.7 2.4V17a1.5 1.5 0 01-1.5 1.5H7.7A1.5 1.5 0 016.2 17v-4.1a2.6 2.6 0 01-1.7-2.4z"/><path d="M10 12v3M14 12v3"/></>);
 
 // Icon lookup by name (for services)
 export const IconByName: Record<string, React.FC<IconProps>> = {

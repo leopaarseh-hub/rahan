@@ -10,20 +10,20 @@ export const MAP_EMBED =
   'https://maps.google.com/maps?q=Luxemburger+Str.+12%2C+50674+K%C3%B6ln%2C+Germany&hl=de&z=17&output=embed';
 
 export const CATS: Category[] = [
-  { id: 1,  fa: 'خشکبار و میوه خشک',  de: 'Nüsse & Trockenfrüchte',        emoji: '🥜', color: '#A07020', bg: '#F7EDD0' },
-  { id: 2,  fa: 'لبنیات',              de: 'Milchprodukte',                   emoji: '🧀', color: '#3A7055', bg: '#DCE9E2' },
-  { id: 3,  fa: 'گوشت و مرغ',          de: 'Fleisch & Geflügel',              emoji: '🥩', color: '#9B3A1E', bg: '#F5E4DC' },
-  { id: 4,  fa: 'برنج و غلات',          de: 'Reis & Getreide',                 emoji: '🌾', color: '#A07020', bg: '#F7EDD0' },
-  { id: 5,  fa: 'ادویه‌جات',            de: 'Gewürze',                         emoji: '🌶️', color: '#9B3A1E', bg: '#F5E4DC' },
-  { id: 6,  fa: 'چای و نوشیدنی',        de: 'Tee & Getränke',                  emoji: '🫖', color: '#3B5249', bg: '#E8EEEA' },
-  { id: 7,  fa: 'ترشی و مربا',          de: 'Eingelegte Speisen & Konfitüren', emoji: '🫙', color: '#3A7055', bg: '#DCE9E2' },
-  { id: 8,  fa: 'شیرینی و تنقلات',      de: 'Süßigkeiten & Snacks',            emoji: '🍯', color: '#A07020', bg: '#F7EDD0' },
-  { id: 9,  fa: 'کنسرو و غذای آماده',   de: 'Konserven & Fertiggerichte',      emoji: '🥫', color: '#5A5A55', bg: '#EDEDEC' },
-  { id: 10, fa: 'سبزیجات تازه',         de: 'Frisches Gemüse',                 emoji: '🥬', color: '#3B5249', bg: '#E8EEEA' },
-  { id: 11, fa: 'نان و نانوایی',         de: 'Brot & Backwaren',                emoji: '🫓', color: '#A07020', bg: '#F7EDD0' },
-  { id: 12, fa: 'محصولات ایرانی',        de: 'Iranische Produkte',              emoji: '🍃', color: '#3B5249', bg: '#E8EEEA' },
-  { id: 13, fa: 'محصولات افغانی',        de: 'Afghanische Produkte',            emoji: '🌙', color: '#9B3A1E', bg: '#F5E4DC' },
-  { id: 14, fa: 'لوازم خانگی',           de: 'Haushaltsbedarf',                 emoji: '🧴', color: '#3A7055', bg: '#DCE9E2' },
+  { id: 1,  fa: 'خشکبار و میوه خشک',  de: 'Nüsse & Trockenfrüchte',        emoji: '🥜', color: '#A07020', bg: '#F7EDD0', img: '/images/products/grapes.jpg' },
+  { id: 2,  fa: 'لبنیات',              de: 'Milchprodukte',                   emoji: '🧀', color: '#3A7055', bg: '#DCE9E2', img: '/images/categories/milk.jpg' },
+  { id: 3,  fa: 'گوشت و مرغ',          de: 'Fleisch & Geflügel',              emoji: '🥩', color: '#9B3A1E', bg: '#F5E4DC', img: '/images/categories/meat.jpg' },
+  { id: 4,  fa: 'برنج و غلات',          de: 'Reis & Getreide',                 emoji: '🌾', color: '#A07020', bg: '#F7EDD0', img: '/images/products/rice.jpg' },
+  { id: 5,  fa: 'ادویه‌جات',            de: 'Gewürze',                         emoji: '🌶️', color: '#9B3A1E', bg: '#F5E4DC', img: '/images/categories/spices.jpg' },
+  { id: 6,  fa: 'چای و نوشیدنی',        de: 'Tee & Getränke',                  emoji: '🫖', color: '#3B5249', bg: '#E8EEEA', img: '/images/products/tea.jpg' },
+  { id: 7,  fa: 'ترشی و مربا',          de: 'Eingelegte Speisen & Konfitüren', emoji: '🫙', color: '#3A7055', bg: '#DCE9E2', img: '/images/categories/jam.jpg' },
+  { id: 8,  fa: 'شیرینی و تنقلات',      de: 'Süßigkeiten & Snacks',            emoji: '🍯', color: '#A07020', bg: '#F7EDD0', img: '/images/categories/sweets.jpg' },
+  { id: 9,  fa: 'کنسرو و غذای آماده',   de: 'Konserven & Fertiggerichte',      emoji: '🥫', color: '#5A5A55', bg: '#EDEDEC', img: '/images/categories/cans.jpg' },
+  { id: 10, fa: 'سبزیجات تازه',         de: 'Frisches Gemüse',                 emoji: '🥬', color: '#3B5249', bg: '#E8EEEA', img: '/images/categories/broccoli.jpg' },
+  { id: 11, fa: 'نان و نانوایی',         de: 'Brot & Backwaren',                emoji: '🫓', color: '#A07020', bg: '#F7EDD0', img: '/images/products/bread.jpg' },
+  { id: 12, fa: 'محصولات ایرانی',        de: 'Iranische Produkte',              emoji: '🍃', color: '#3B5249', bg: '#E8EEEA', img: '/images/categories/persianrice.jpg' },
+  { id: 13, fa: 'محصولات افغانی',        de: 'Afghanische Produkte',            emoji: '🌙', color: '#9B3A1E', bg: '#F5E4DC', img: '/images/categories/buns.jpg' },
+  { id: 14, fa: 'لوازم خانگی',           de: 'Haushaltsbedarf',                 emoji: '🧴', color: '#3A7055', bg: '#DCE9E2', img: '/images/categories/household.jpg' },
 ];
 
 export const PRODUCTS: Product[] = [

@@ -6,7 +6,8 @@ import { CATS, MAPS_URL } from '@/lib/data';
 import { PRODUCTS } from '@/lib/data';
 import ProductCard from '@/components/ProductCard';
 import { SectionHead, InfoRow, LiveMap } from '@/components/UI';
-import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon, CrownIcon } from '@/components/Icons';
+import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon, CrownIcon, SaffronIcon, WheatIcon, TeapotIcon, HoneyIcon, BreadIcon } from '@/components/Icons';
+import { withBase } from '@/lib/data';
 
 export default function HomePage() {
   const { lang } = useLanguage();
@@ -63,8 +64,12 @@ export default function HomePage() {
                     <span className="ornament-gem" />
                   </div>
                   <div style={{ fontSize:12, letterSpacing:'.28em', textIndent:'.28em', color:'rgba(212,175,55,.85)', textTransform:'uppercase', fontWeight:600 }}>Premium Markt · Köln</div>
-                  <div style={{ display:'flex', gap:14, justifyContent:'center', fontSize:26, marginTop:26 }}>
-                    <span>🌸</span><span>🌾</span><span>🥜</span><span>🫖</span><span>🍯</span>
+                  <div style={{ display:'flex', gap:12, justifyContent:'center', marginTop:26 }}>
+                    {[SaffronIcon, WheatIcon, TeapotIcon, HoneyIcon, BreadIcon].map((Icon, i) => (
+                      <span key={i} style={{ width:38, height:38, borderRadius:'50%', border:'1px solid rgba(212,175,55,.35)', background:'rgba(212,175,55,.08)', display:'flex', alignItems:'center', justifyContent:'center' }}>
+                        <Icon size={18} stroke="var(--gold-l)" />
+                      </span>
+                    ))}
                   </div>
                   <div style={{ fontSize:11, letterSpacing:'.14em', color:'rgba(255,255,255,.38)', marginTop:22 }}>LUXEMBURGER STR. 12 · 50674 KÖLN</div>
                 </div>
@@ -75,7 +80,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Featured Categories ── */}
-      <section className="section" style={{ background:'var(--cream)' }}>
+      <section className="section" style={{ background:'transparent' }}>
         <div className="container">
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-end', marginBottom:40, flexWrap:'wrap', gap:12 }}>
             <SectionHead eyebrow={lang === 'fa' ? 'دسته‌بندی‌ها' : 'Kategorien'} title={t.secCats} center={false} />
@@ -86,7 +91,10 @@ export default function HomePage() {
           <div className="g-cats">
             {CATS.slice(0,6).map(c => (
               <Link href="/shop" key={c.id} className="cat-card" style={{ textDecoration:'none' }}>
-                <div style={{ width:52, height:52, borderRadius:14, background:c.bg, display:'flex', alignItems:'center', justifyContent:'center', fontSize:26, marginBottom:14 }}>{c.emoji}</div>
+                <div style={{ width:56, height:56, borderRadius:14, background:'#fff', border:'1px solid var(--border-l)', overflow:'hidden', marginBottom:14, boxShadow:'0 3px 10px rgba(34,69,58,.07)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={withBase(c.img || '')} alt={lang === 'fa' ? c.fa : c.de} style={{ width:'100%', height:'100%', objectFit:'cover', transform:'scale(1.12)' }} />
+                </div>
                 <div style={{ fontWeight:600, fontSize:14, color:'var(--charcoal)', marginBottom:4 }}>{lang === 'fa' ? c.fa : c.de}</div>
                 <div className={lang === 'fa' ? 'en-font' : 'fa-font'} style={{ fontSize:12, color:'var(--light)' }}>{lang === 'fa' ? c.de : c.fa}</div>
               </Link>
@@ -96,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Featured Products ── */}
-      <section className="section" style={{ background:'var(--cream-mid)' }}>
+      <section className="section" style={{ background:'rgba(240,234,221,.45)', borderTop:'1px solid var(--border-l)', borderBottom:'1px solid var(--border-l)' }}>
         <div className="container">
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-end', marginBottom:40, flexWrap:'wrap', gap:12 }}>
             <SectionHead eyebrow={lang === 'fa' ? 'محصولات' : 'Produkte'} title={t.secProds} center={false} />
@@ -130,7 +138,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Location + Live Map ── */}
-      <section className="section" style={{ background:'var(--cream)' }}>
+      <section className="section" style={{ background:'transparent' }}>
         <div className="container">
           <div style={{ display:'grid', gridTemplateColumns:'1fr 1.1fr', gap:48, alignItems:'start' }} className="two-col-map">
             <div>
