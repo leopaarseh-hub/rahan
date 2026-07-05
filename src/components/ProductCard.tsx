@@ -5,6 +5,7 @@ import { useCart } from '@/contexts/CartContext';
 import { T } from '@/lib/translations';
 import { Badge } from './UI';
 import { PlusIcon } from './Icons';
+import { withBase } from '@/lib/data';
 
 export default function ProductCard({ product: p }: { product: Product }) {
   const { lang } = useLanguage();
@@ -17,7 +18,7 @@ export default function ProductCard({ product: p }: { product: Product }) {
       <div style={{ height: 175, background: p.imgBg, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
         {p.img ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={p.img} alt={lang === 'fa' ? p.fa : p.de} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 10 }} />
+          <img src={withBase(p.img)} alt={lang === 'fa' ? p.fa : p.de} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 10 }} />
         ) : (
           <span style={{ fontSize: '3.8rem' }}>{p.emoji}</span>
         )}
