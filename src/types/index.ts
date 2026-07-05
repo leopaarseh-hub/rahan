@@ -22,6 +22,7 @@ export interface Category {
   emoji: string;
   color: string;
   bg: string;
+  img?: string;
 }
 
 export interface CartItem extends Product {
