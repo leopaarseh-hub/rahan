@@ -14,8 +14,13 @@ export default function ProductCard({ product: p }: { product: Product }) {
 
   return (
     <div className="prod-card">
-      <div style={{ height: 175, background: p.imgBg, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-        <span style={{ fontSize: '3.8rem' }}>{p.emoji}</span>
+      <div style={{ height: 175, background: p.imgBg, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+        {p.img ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={p.img} alt={lang === 'fa' ? p.fa : p.de} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 10 }} />
+        ) : (
+          <span style={{ fontSize: '3.8rem' }}>{p.emoji}</span>
+        )}
         <div style={{ position: 'absolute', top: 12, left: lang === 'fa' ? 'auto' : 12, right: lang === 'fa' ? 12 : 'auto' }}>
           <Badge label={badge} />
         </div>

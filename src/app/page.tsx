@@ -105,7 +105,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="g-prods">
-            {PRODUCTS.slice(0,4).map(p => <ProductCard key={p.id} product={p} />)}
+            {PRODUCTS.slice(0,8).map(p => <ProductCard key={p.id} product={p} />)}
           </div>
         </div>
       </section>

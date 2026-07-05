@@ -39,7 +39,7 @@ export default function ShopPage() {
         </div>
         <div style={{ display:'flex', gap:8, flexWrap:'wrap', marginBottom:36 }}>
           <button className={`pill ${activeCat === 0 ? 'active' : ''}`} onClick={() => setActiveCat(0)}>{t.all}</button>
-          {CATS.slice(0,8).map(c => (
+          {CATS.filter(c => PRODUCTS.some(p => p.catId === c.id)).map(c => (
             <button key={c.id} className={`pill ${activeCat === c.id ? 'active' : ''}`} onClick={() => setActiveCat(c.id)}>
               {lang === 'fa' ? c.fa : c.de}
             </button>

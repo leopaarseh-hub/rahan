@@ -12,6 +12,7 @@ export interface Product {
   bDe: string;
   emoji: string;
   imgBg: string;
+  img?: string;
 }
 
 export interface Category {
