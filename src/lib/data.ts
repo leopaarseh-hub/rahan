@@ -1,5 +1,8 @@
 import { Category, Product, Service } from '@/types';
 
+// Prefix asset paths with the deployment base path (e.g. /rahan on GitHub Pages)
+export const withBase = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${path}`;
+
 export const MAPS_URL =
   'https://maps.google.com/maps/place//data=!4m2!3m1!1s0x47bf2300ca89d765:0x861c99e70b9ee4d9?entry=s&sa=X&ved=2ahUKEwjn09_ttLyVAxWaSKQEHep8K0IQ4kB6BAgbEAA&hl=en';
 

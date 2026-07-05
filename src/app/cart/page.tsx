@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useCart } from '@/contexts/CartContext';
 import { T } from '@/lib/translations';
+import { withBase } from '@/lib/data';
 import { ArrowLeftIcon, ArrowRightIcon, MinusIcon, PlusIcon, TrashIcon, LockIcon, CartIcon } from '@/components/Icons';
 
 export default function CartPage() {
@@ -40,7 +41,7 @@ export default function CartPage() {
                   <div style={{ width:68, height:68, borderRadius:14, background:item.imgBg, border:'1px solid var(--border-l)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:32, flexShrink:0, overflow:'hidden' }}>
                     {item.img
                       // eslint-disable-next-line @next/next/no-img-element
-                      ? <img src={item.img} alt={lang === 'fa' ? item.fa : item.de} style={{ width:'100%', height:'100%', objectFit:'contain' }} />
+                      ? <img src={withBase(item.img)} alt={lang === 'fa' ? item.fa : item.de} style={{ width:'100%', height:'100%', objectFit:'contain' }} />
                       : item.emoji}
                   </div>
                   <div style={{ flex:1, minWidth:130 }}>
