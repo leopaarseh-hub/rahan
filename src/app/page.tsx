@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { T } from '@/lib/translations';
@@ -7,7 +6,7 @@ import { CATS, MAPS_URL } from '@/lib/data';
 import { PRODUCTS } from '@/lib/data';
 import ProductCard from '@/components/ProductCard';
 import { SectionHead, InfoRow, LiveMap } from '@/components/UI';
-import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon } from '@/components/Icons';
+import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon, CrownIcon } from '@/components/Icons';
 
 export default function HomePage() {
   const { lang } = useLanguage();
@@ -19,19 +18,19 @@ export default function HomePage() {
       {/* ── Hero ── */}
       <section className="hero">
         <div className="hero-pattern" />
-        <div style={{ position:'absolute', top:'8%', right:'4%', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(201,151,58,.16) 0%, transparent 70%)', pointerEvents:'none' }} />
-        <div style={{ position:'absolute', bottom:'12%', left:'2%', width:280, height:280, borderRadius:'50%', background:'radial-gradient(circle, rgba(122,155,138,.14) 0%, transparent 70%)', pointerEvents:'none' }} />
+        <div style={{ position:'absolute', top:'8%', right:'4%', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(184,137,46,.16) 0%, transparent 70%)', pointerEvents:'none' }} />
+        <div style={{ position:'absolute', bottom:'12%', left:'2%', width:280, height:280, borderRadius:'50%', background:'radial-gradient(circle, rgba(116,151,127,.14) 0%, transparent 70%)', pointerEvents:'none' }} />
 
         <div className="container" style={{ position:'relative', zIndex:1 }}>
           <div style={{ display:'flex', alignItems:'center', gap:'clamp(24px,5vw,64px)', flexWrap:'wrap' }}>
 
             {/* Text */}
             <div style={{ flex:'1 1 360px', minWidth:0 }}>
-              <div className="a1" style={{ display:'inline-flex', alignItems:'center', gap:8, background:'rgba(201,151,58,.14)', border:'1px solid rgba(201,151,58,.3)', borderRadius:24, padding:'6px 16px', marginBottom:26 }}>
+              <div className="a1" style={{ display:'inline-flex', alignItems:'center', gap:8, background:'rgba(184,137,46,.14)', border:'1px solid rgba(184,137,46,.3)', borderRadius:24, padding:'6px 16px', marginBottom:26 }}>
                 <span style={{ width:6, height:6, borderRadius:'50%', background:'var(--gold)', display:'inline-block', animation:'pulseDot 2s ease infinite' }} />
                 <span style={{ color:'var(--gold-l)', fontSize:13, fontWeight:500 }}>{t.hero.badge}</span>
               </div>
-              <h1 className="d-font a2" style={{ fontSize:'clamp(44px,6vw,84px)', fontWeight:700, color:'#fff', lineHeight:.95, letterSpacing:'-0.03em', marginBottom:22 }}>
+              <h1 className="d-font a2 gold-grad" style={{ fontSize:'clamp(44px,6vw,84px)', fontWeight:700, lineHeight:1.02, letterSpacing:'-0.02em', marginBottom:22, paddingBottom:6 }}>
                 {t.hero.title}
               </h1>
               <p className="a3" style={{ fontSize:'clamp(16px,2vw,21px)', color:'rgba(255,255,255,.72)', fontStyle:'italic', fontFamily:"'Cormorant Garamond', serif", marginBottom:16 }}>
@@ -50,17 +49,25 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero image */}
+            {/* Hero crest */}
             <div className="hero-img-wrap">
-              <div style={{ position:'relative', display:'flex', alignItems:'center', justifyContent:'center' }}>
-                <div style={{ position:'absolute', width:'90%', height:'90%', borderRadius:'50%', background:'radial-gradient(circle, rgba(201,151,58,.28) 0%, transparent 72%)', pointerEvents:'none' }} />
-                <Image
-                  src="/images/hero-products.jpg"
-                  alt="Rahan Markt — Iranian & Afghan Grocery Products"
-                  width={430} height={408}
-                  className="hero-img"
-                  priority
-                />
+              <div style={{ position:'relative', display:'flex', alignItems:'center', justifyContent:'center', width:'100%' }}>
+                <div style={{ position:'absolute', width:'96%', height:'96%', borderRadius:'50%', background:'radial-gradient(circle, rgba(212,175,55,.22) 0%, transparent 72%)', pointerEvents:'none' }} />
+                <div className="hero-crest">
+                  <div className="hero-crest-ring">
+                    <CrownIcon size={44} stroke="var(--gold-l)" />
+                  </div>
+                  <div className="d-font gold-grad" style={{ fontSize:'clamp(40px,4.5vw,58px)', fontWeight:700, letterSpacing:'.32em', textIndent:'.32em', lineHeight:1.1, paddingBottom:4 }}>KIAN</div>
+                  <div className="fa-font" style={{ fontSize:20, color:'rgba(255,255,255,.85)', fontWeight:500 }}>کیان مارکت</div>
+                  <div className="ornament" style={{ margin:'18px 0' }}>
+                    <span className="ornament-gem" />
+                  </div>
+                  <div style={{ fontSize:12, letterSpacing:'.28em', textIndent:'.28em', color:'rgba(212,175,55,.85)', textTransform:'uppercase', fontWeight:600 }}>Premium Markt · Köln</div>
+                  <div style={{ display:'flex', gap:14, justifyContent:'center', fontSize:26, marginTop:26 }}>
+                    <span>🌸</span><span>🌾</span><span>🥜</span><span>🫖</span><span>🍯</span>
+                  </div>
+                  <div style={{ fontSize:11, letterSpacing:'.14em', color:'rgba(255,255,255,.38)', marginTop:22 }}>LUXEMBURGER STR. 12 · 50674 KÖLN</div>
+                </div>
               </div>
             </div>
           </div>
@@ -105,13 +112,13 @@ export default function HomePage() {
 
       {/* ── Benefits ── */}
       <section className="section" style={{ background:'var(--olive)', position:'relative', overflow:'hidden' }}>
-        <div style={{ position:'absolute', inset:0, opacity:.06, backgroundImage:`url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9973A'%3E%3Cpath d='M40 4L52 28H76L55 43L63 67L40 52L17 67L25 43L4 28H28Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize:'80px 80px' }} />
+        <div style={{ position:'absolute', inset:0, opacity:.06, backgroundImage:`url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4AF37'%3E%3Cpath d='M40 4L52 28H76L55 43L63 67L40 52L17 67L25 43L4 28H28Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize:'80px 80px' }} />
         <div className="container" style={{ position:'relative' }}>
           <SectionHead eyebrow={t.benefits.label} title={t.benefits.title} sub={t.benefits.sub} light />
           <div className="g4">
             {t.benefits.items.map((b, i) => (
               <div key={i} style={{ background:'rgba(255,255,255,.07)', border:'1px solid rgba(255,255,255,.11)', borderRadius:18, padding:'32px 24px' }}>
-                <div style={{ width:44, height:44, borderRadius:12, background:'rgba(201,151,58,.18)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:18 }}>
+                <div style={{ width:44, height:44, borderRadius:12, background:'rgba(184,137,46,.18)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:18 }}>
                   <CheckCircleIcon size={22} stroke="var(--gold-l)" />
                 </div>
                 <h3 style={{ color:'#fff', fontWeight:600, fontSize:15, marginBottom:10 }}>{b.title}</h3>

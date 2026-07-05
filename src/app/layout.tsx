@@ -3,12 +3,12 @@ import './globals.css';
 import Providers from '@/components/Providers';
 
 export const metadata: Metadata = {
-  title: 'Rahan Markt | Iranian & Afghan Supermarket in Düsseldorf',
-  description: 'Premium Iranian and Afghan supermarket in Düsseldorf offering fresh groceries, traditional ingredients, spices, rice, tea, dairy and everyday essentials. Kölner Str. 49, 40211 Düsseldorf.',
-  keywords: ['Rahan Markt', 'Iranischer Supermarkt Düsseldorf', 'Afghan Supermarket', 'Persische Lebensmittel', 'راهان مارکت', 'دوسلدورف'],
+  title: 'Kian Markt | Premium Iranian & Afghan Supermarket in Köln',
+  description: 'Kian Markt — premium Iranian and Afghan supermarket in Köln offering fresh groceries, traditional ingredients, saffron, spices, rice, tea, dairy and everyday essentials. Luxemburger Str. 12, 50674 Köln.',
+  keywords: ['Kian Markt', 'Iranischer Supermarkt Köln', 'Afghan Supermarket', 'Persische Lebensmittel', 'Premium Supermarkt Köln', 'کیان مارکت', 'کلن'],
   openGraph: {
-    title: 'Rahan Markt | Iranian & Afghan Supermarket in Düsseldorf',
-    description: 'Fresh Iranian and Afghan groceries in Düsseldorf — Kölner Str. 49',
+    title: 'Kian Markt | Premium Iranian & Afghan Supermarket in Köln',
+    description: 'Premium Iranian and Afghan groceries in Köln — Luxemburger Str. 12',
     locale: 'de_DE',
     type: 'website',
   },
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#3B5249" />
+        <meta name="theme-color" content="#22453A" />
       </head>
       <body>
         <Providers>{children}</Providers>

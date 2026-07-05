@@ -14,8 +14,8 @@ export default function LoginPage() {
           <div style={{ width:58, height:58, background:'var(--olive)', borderRadius:16, display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 16px' }}>
             <LeafIcon size={26} stroke="#fff" />
           </div>
-          <div className="d-font" style={{ fontSize:26, fontWeight:700, color:'var(--olive)', marginBottom:4 }}>Rahan Markt</div>
-          <div className="fa-font" style={{ fontSize:13, color:'var(--mid)' }}>راهان مارکت</div>
+          <div className="d-font" style={{ fontSize:26, fontWeight:700, color:'var(--olive)', marginBottom:4 }}>Kian Markt</div>
+          <div className="fa-font" style={{ fontSize:13, color:'var(--mid)' }}>کیان مارکت</div>
         </div>
         <div className="card" style={{ padding:'38px 32px' }}>
           <h2 style={{ fontWeight:700, fontSize:22, color:'var(--charcoal)', marginBottom:30, textAlign:'center' }}>{t.loginFull}</h2>

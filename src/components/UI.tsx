@@ -1,6 +1,6 @@
 'use client';
 import { BADGE_STYLE } from '@/lib/data';
-import { LeafIcon } from './Icons';
+import { CrownIcon } from './Icons';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRouter } from 'next/navigation';
 
@@ -34,6 +34,11 @@ export function SectionHead({ eyebrow, title, sub, light, center = true }: Secti
         {title}
       </h2>
       {sub && <p style={{ fontSize: 15, color: light ? 'rgba(255,255,255,.55)' : 'var(--mid)', lineHeight: 1.6 }}>{sub}</p>}
+      {center && (
+        <div className="ornament" style={{ marginTop: 16 }}>
+          <span className="ornament-gem" />
+        </div>
+      )}
     </div>
   );
 }
@@ -74,12 +79,12 @@ export function Logo({ onClick }: { onClick?: () => void }) {
   };
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none' }}>
-      <div style={{ width: 38, height: 38, background: 'var(--olive)', borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <LeafIcon size={20} stroke="#fff" />
+      <div style={{ width: 38, height: 38, background: 'linear-gradient(135deg, var(--olive) 0%, var(--olive-l) 100%)', border: '1px solid rgba(212,175,55,.45)', borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 3px 10px rgba(34,69,58,.22)' }}>
+        <CrownIcon size={20} stroke="var(--gold-l)" />
       </div>
       <div>
-        <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: 'var(--olive)', lineHeight: 1.1, letterSpacing: '-0.01em' }}>Rahan Markt</div>
-        <div className="fa-font" style={{ fontSize: 11, color: 'var(--mid)', lineHeight: 1 }}>راهان مارکت</div>
+        <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: 'var(--olive)', lineHeight: 1.1, letterSpacing: '.02em' }}>Kian Markt</div>
+        <div className="fa-font" style={{ fontSize: 11, color: 'var(--gold)', lineHeight: 1 }}>کیان مارکت</div>
       </div>
     </div>
   );
@@ -103,7 +108,7 @@ export function LiveMap({ height = 420 }: { height?: number }) {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Rahan Markt — Kölner Str. 49, Düsseldorf"
+        title="Kian Markt — Luxemburger Str. 12, Köln"
       />
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(255,255,255,0.97)', backdropFilter: 'blur(10px)', borderTop: '1px solid rgba(220,214,206,.8)', padding: '14px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -111,8 +116,8 @@ export function LiveMap({ height = 420 }: { height?: number }) {
             <MapPinIcon size={18} stroke="var(--olive)" />
           </div>
           <div>
-            <div style={{ fontWeight: 700, fontSize: 13, color: 'var(--charcoal)', lineHeight: 1.2 }}>Rahan Markt</div>
-            <div style={{ fontSize: 12, color: 'var(--mid)', marginTop: 2 }}>Kölner Str. 49, 40211 Düsseldorf</div>
+            <div style={{ fontWeight: 700, fontSize: 13, color: 'var(--charcoal)', lineHeight: 1.2 }}>Kian Markt</div>
+            <div style={{ fontSize: 12, color: 'var(--mid)', marginTop: 2 }}>Luxemburger Str. 12, 50674 Köln</div>
           </div>
         </div>
         <a href={MAPS_URL} target="_blank" rel="noreferrer"
