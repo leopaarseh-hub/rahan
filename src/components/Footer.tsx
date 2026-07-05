@@ -96,6 +96,15 @@ export default function Footer() {
           <span style={{ fontSize: 12, color: 'rgba(200,210,206,.35)' }}>{t.copyright}</span>
           <span style={{ fontSize: 12, color: 'rgba(200,210,206,.25)' }}>Luxemburger Str. 12 · 50674 Köln</span>
         </div>
+        <div className="en-font" dir="ltr" style={{ borderTop: '1px solid rgba(255,255,255,.06)', padding: '14px 0 18px', textAlign: 'center', fontSize: 12, letterSpacing: '.04em', color: 'rgba(200,210,206,.35)' }}>
+          Design &amp; Development by{' '}
+          <a href="https://parnil.co" target="_blank" rel="noreferrer"
+            style={{ color: 'var(--gold-l)', textDecoration: 'none', fontWeight: 600 }}
+            onMouseEnter={e => (e.currentTarget.style.textDecoration = 'underline')}
+            onMouseLeave={e => (e.currentTarget.style.textDecoration = 'none')}>
+            Parnil.co
+          </a>
+        </div>
       </div>
     </footer>
   );
