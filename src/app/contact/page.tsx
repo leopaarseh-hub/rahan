@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       <div style={{ background:'var(--cream-dark)', borderBottom:'1px solid var(--border)', padding:'52px 0 40px' }}>
         <div className="container">
-          <p style={{ color:'var(--mid)', fontSize:13, marginBottom:6 }}>Rahan Markt</p>
+          <p style={{ color:'var(--mid)', fontSize:13, marginBottom:6 }}>Kian Markt</p>
           <h1 className="d-font" style={{ fontSize:'clamp(30px,5vw,52px)', fontWeight:700, color:'var(--charcoal)', letterSpacing:'-0.02em' }}>{t.contactTitle}</h1>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function ContactPage() {
             <InfoRow icon={<PhoneIcon  size={20} stroke="var(--sage)"  />} label={lang === 'fa' ? 'شماره تماس' : 'Telefon'} value={loc.phone} />
             <InfoRow icon={<ClockIcon  size={20} stroke="var(--gold)"  />} label={loc.hoursLabel} value={loc.hoursVal} />
             <div style={{ display:'flex', gap:10, flexWrap:'wrap' }}>
-              <a href="tel:021142359788" className="btn btn-primary" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:7 }}>
+              <a href="tel:022193290358" className="btn btn-primary" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:7 }}>
                 <PhoneIcon size={15} stroke="#fff" /> {t.callUs}
               </a>
               <a href={MAPS_URL} target="_blank" rel="noreferrer" className="btn btn-outline" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:7 }}>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { T } from '@/lib/translations';
 import { MAPS_URL } from '@/lib/data';
-import { LeafIcon, PhoneIcon, MapPinIcon, ExternalLinkIcon } from './Icons';
+import { CrownIcon, PhoneIcon, MapPinIcon, ExternalLinkIcon } from './Icons';
 
 export default function Footer() {
   const { lang } = useLanguage();
@@ -30,12 +30,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
-              <div style={{ width: 38, height: 38, background: 'rgba(201,151,58,.2)', borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <LeafIcon size={20} stroke="var(--gold-l)" />
+              <div style={{ width: 38, height: 38, background: 'linear-gradient(135deg, rgba(184,137,46,.3), rgba(212,175,55,.16))', border: '1px solid rgba(212,175,55,.35)', borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <CrownIcon size={20} stroke="var(--gold-l)" />
               </div>
               <div>
-                <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: '#fff' }}>Rahan Markt</div>
-                <div className="fa-font" style={{ fontSize: 11, color: 'rgba(200,210,206,.4)' }}>راهان مارکت</div>
+                <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>Kian Markt</div>
+                <div className="fa-font" style={{ fontSize: 11, color: 'rgba(212,175,55,.55)' }}>کیان مارکت</div>
               </div>
             </div>
             <p style={{ fontSize: 13, color: 'rgba(200,210,206,.55)', lineHeight: 1.8, marginBottom: 22, maxWidth: 280 }}>{t.footerDesc}</p>
@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,.08)', padding: '20px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
           <span style={{ fontSize: 12, color: 'rgba(200,210,206,.35)' }}>{t.copyright}</span>
-          <span style={{ fontSize: 12, color: 'rgba(200,210,206,.25)' }}>Kölner Str. 49 · 40211 Düsseldorf</span>
+          <span style={{ fontSize: 12, color: 'rgba(200,210,206,.25)' }}>Luxemburger Str. 12 · 50674 Köln</span>
         </div>
       </div>
     </footer>

@@ -22,14 +22,14 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Hydrate from localStorage
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('rahan-cart');
+      const saved = localStorage.getItem('kian-cart');
       if (saved) setCart(JSON.parse(saved));
     } catch {}
   }, []);
 
   // Persist to localStorage
   useEffect(() => {
-    localStorage.setItem('rahan-cart', JSON.stringify(cart));
+    localStorage.setItem('kian-cart', JSON.stringify(cart));
   }, [cart]);
 
   const addToCart = (p: Product) => {

@@ -15,7 +15,7 @@ export default function CartPage() {
     <>
       <div style={{ background:'var(--cream-dark)', borderBottom:'1px solid var(--border)', padding:'52px 0 40px' }}>
         <div className="container">
-          <p style={{ color:'var(--mid)', fontSize:13, marginBottom:6 }}>Rahan Markt</p>
+          <p style={{ color:'var(--mid)', fontSize:13, marginBottom:6 }}>Kian Markt</p>
           <h1 className="d-font" style={{ fontSize:'clamp(30px,5vw,52px)', fontWeight:700, color:'var(--charcoal)', letterSpacing:'-0.02em' }}>
             {t.cartTitle} {cart.length > 0 && <span style={{ fontSize:'0.5em', color:'var(--mid)', fontWeight:400 }}>({cart.reduce((s,i)=>s+i.qty,0)})</span>}
           </h1>

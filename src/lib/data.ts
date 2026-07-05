@@ -1,10 +1,10 @@
 import { Category, Product, Service } from '@/types';
 
 export const MAPS_URL =
-  'https://maps.google.com/maps/place//data=!4m2!3m1!1s0x47b8ca2e44623a4f:0xe79502f1219841ea?entry=s&sa=X&ved=2ahUKEwjG356Kg_OUAxVFQvEDHZNlNtIQ4kB6BAgcEAA&hl=en';
+  'https://maps.google.com/maps/place//data=!4m2!3m1!1s0x47bf2300ca89d765:0x861c99e70b9ee4d9?entry=s&sa=X&ved=2ahUKEwjn09_ttLyVAxWaSKQEHep8K0IQ4kB6BAgbEAA&hl=en';
 
 export const MAP_EMBED =
-  'https://maps.google.com/maps?q=K%C3%B6lner+Str.+49%2C+40211+D%C3%BCsseldorf%2C+Germany&hl=de&z=17&output=embed';
+  'https://maps.google.com/maps?q=Luxemburger+Str.+12%2C+50674+K%C3%B6ln%2C+Germany&hl=de&z=17&output=embed';
 
 export const CATS: Category[] = [
   { id: 1,  fa: 'خشکبار و میوه خشک',  de: 'Nüsse & Trockenfrüchte',        emoji: '🥜', color: '#A07020', bg: '#F7EDD0' },

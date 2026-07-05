@@ -13,7 +13,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>('fa');
 
   useEffect(() => {
-    const saved = localStorage.getItem('rahan-lang') as Lang;
+    const saved = localStorage.getItem('kian-lang') as Lang;
     if (saved === 'fa' || saved === 'de') setLangState(saved);
   }, []);
 
@@ -21,7 +21,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.documentElement.dir  = lang === 'fa' ? 'rtl' : 'ltr';
     document.documentElement.lang = lang;
     document.body.className        = lang === 'fa' ? 'fa-font' : 'en-font';
-    localStorage.setItem('rahan-lang', lang);
+    localStorage.setItem('kian-lang', lang);
   }, [lang]);
 
   const setLang = (l: Lang) => setLangState(l);

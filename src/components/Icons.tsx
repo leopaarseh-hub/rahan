@@ -28,6 +28,7 @@ export const MailIcon      = base(<><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 
 export const LeafIcon      = base(<><path d="M17 8C8 10 5.9 16.17 3.82 19.5c.85.8 1.87 1.37 3 1.5C10 21 14 19 14 14c0-3-1-5-3-6"/><path d="M17 8c0 0-1 7-8 11"/></>);
 export const PackageIcon   = base(<><polyline points="16.5 9.4 7.5 4.21"/><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></>);
 export const CheckCircleIcon=base(<><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>);
+export const CrownIcon     = base(<><path d="M3 18h18"/><path d="M4 15l-1-8 5 3.5L12 4l4 6.5L21 7l-1 8H4z"/></>);
 
 // Icon lookup by name (for services)
 export const IconByName: Record<string, React.FC<IconProps>> = {

@@ -19,7 +19,7 @@ export default function ShopPage() {
     <>
       <div style={{ background:'var(--olive)', padding:'52px 0 40px' }}>
         <div className="container">
-          <p style={{ color:'rgba(255,255,255,.45)', fontSize:13, marginBottom:6 }}>Rahan Markt</p>
+          <p style={{ color:'rgba(255,255,255,.45)', fontSize:13, marginBottom:6 }}>Kian Markt</p>
           <h1 className="d-font" style={{ fontSize:'clamp(30px,5vw,52px)', fontWeight:700, color:'#fff', letterSpacing:'-0.02em' }}>{t.shopTitle}</h1>
         </div>
       </div>
