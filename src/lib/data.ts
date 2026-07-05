@@ -24,14 +24,18 @@ export const CATS: Category[] = [
 ];
 
 export const PRODUCTS: Product[] = [
-  { id: 1, fa: 'زعفران اصل قائنات',  de: 'Echter Safran aus Ghaenat',   catId: 5,  catFa: 'ادویه‌جات',  catDe: 'Gewürze',         price: 12.99, bFa: 'اصل',    bDe: 'Premium',        emoji: '🌸', imgBg: '#F7EDD0' },
-  { id: 2, fa: 'برنج طارم ایرانی',   de: 'Tarom-Reis aus Iran',         catId: 4,  catFa: 'برنج',       catDe: 'Reis',            price: 8.49,  bFa: 'وارداتی', bDe: 'Importiert',     emoji: '🌾', imgBg: '#EDF2EE' },
-  { id: 3, fa: 'پسته تازه کرمان',    de: 'Frische Pistazien Kerman',    catId: 1,  catFa: 'خشکبار',     catDe: 'Nüsse',           price: 14.99, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🥜', imgBg: '#F7EDD0' },
-  { id: 4, fa: 'چای لاهیجان',        de: 'Lahijan-Tee',                 catId: 6,  catFa: 'چای',        catDe: 'Tee',             price: 6.99,  bFa: 'محبوب',  bDe: 'Beliebt',        emoji: '🫖', imgBg: '#E8EEEA' },
-  { id: 5, fa: 'کشمش سبز',           de: 'Grüne Rosinen',               catId: 1,  catFa: 'میوه خشک',  catDe: 'Trockenfrüchte',  price: 4.99,  bFa: 'تازه',   bDe: 'Frisch',         emoji: '🍇', imgBg: '#EDF2EE' },
-  { id: 6, fa: 'ماست ایرانی',        de: 'Iranischer Joghurt',          catId: 2,  catFa: 'لبنیات',     catDe: 'Milchprodukte',   price: 3.49,  bFa: 'تازه',   bDe: 'Täglich frisch', emoji: '🥛', imgBg: '#DCE9E2' },
-  { id: 7, fa: 'آجیل مخلوط ویژه',   de: 'Gemischte Nüsse Premium',     catId: 1,  catFa: 'خشکبار',     catDe: 'Nüsse',           price: 9.99,  bFa: 'ویژه',   bDe: 'Premium',        emoji: '🥜', imgBg: '#F7EDD0' },
-  { id: 8, fa: 'نان سنگک تازه',      de: 'Frisches Sangak-Brot',       catId: 11, catFa: 'نانوایی',    catDe: 'Backwaren',       price: 2.99,  bFa: 'تازه',   bDe: 'Frisch',         emoji: '🫓', imgBg: '#FBF5E6' },
+  { id: 1,  fa: 'برنج ممتاز وارداتی',  de: 'Premium Import-Reis',   catId: 4,  catFa: 'برنج و غلات',   catDe: 'Reis & Getreide',  price: 8.49, bFa: 'وارداتی', bDe: 'Importiert',     emoji: '🌾', imgBg: '#fff', img: '/images/products/rice.jpg' },
+  { id: 2,  fa: 'چای سیلان ممتاز',     de: 'Premium Ceylon-Tee',    catId: 6,  catFa: 'چای',           catDe: 'Tee',              price: 6.99, bFa: 'محبوب',  bDe: 'Beliebt',        emoji: '🫖', imgBg: '#fff', img: '/images/products/tea.jpg' },
+  { id: 3,  fa: 'گوجه‌فرنگی تازه',     de: 'Frische Tomaten',       catId: 10, catFa: 'سبزیجات تازه',  catDe: 'Frisches Gemüse',  price: 2.49, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🍅', imgBg: '#fff', img: '/images/products/tomatoes.jpg' },
+  { id: 4,  fa: 'خیار تازه',           de: 'Frische Gurken',        catId: 10, catFa: 'سبزیجات تازه',  catDe: 'Frisches Gemüse',  price: 1.99, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🥒', imgBg: '#fff', img: '/images/products/cucumbers.jpg' },
+  { id: 5,  fa: 'انگور قرمز تازه',     de: 'Frische rote Trauben',  catId: 10, catFa: 'میوه تازه',     catDe: 'Frisches Obst',    price: 3.99, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🍇', imgBg: '#fff', img: '/images/products/grapes.jpg' },
+  { id: 6,  fa: 'ماست و لبنیات تازه',  de: 'Frischer Joghurt',      catId: 2,  catFa: 'لبنیات',        catDe: 'Milchprodukte',    price: 3.49, bFa: 'تازه',   bDe: 'Täglich frisch', emoji: '🥛', imgBg: '#fff', img: '/images/products/yogurt.jpg' },
+  { id: 7,  fa: 'نان تازه روزانه',      de: 'Täglich frisches Brot', catId: 11, catFa: 'نان و نانوایی', catDe: 'Brot & Backwaren', price: 2.99, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🫓', imgBg: '#fff', img: '/images/products/bread.jpg' },
+  { id: 8,  fa: 'تخم‌مرغ تازه',        de: 'Frische Eier',          catId: 2,  catFa: 'لبنیات',        catDe: 'Milchprodukte',    price: 3.29, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🥚', imgBg: '#fff', img: '/images/products/eggs.jpg' },
+  { id: 9,  fa: 'عسل طبیعی',           de: 'Natürlicher Honig',     catId: 8,  catFa: 'شیرینی',        catDe: 'Süßes',            price: 7.99, bFa: 'اصل',    bDe: 'Premium',        emoji: '🍯', imgBg: '#fff', img: '/images/products/honey.jpg' },
+  { id: 10, fa: 'سیب قرمز و سبز',      de: 'Rote & grüne Äpfel',    catId: 10, catFa: 'میوه تازه',     catDe: 'Frisches Obst',    price: 2.79, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🍎', imgBg: '#fff', img: '/images/products/apples.jpg' },
+  { id: 11, fa: 'پرتقال آبدار',        de: 'Saftige Orangen',       catId: 10, catFa: 'میوه تازه',     catDe: 'Frisches Obst',    price: 2.49, bFa: 'تازه',   bDe: 'Frisch',         emoji: '🍊', imgBg: '#fff', img: '/images/products/oranges.jpg' },
+  { id: 12, fa: 'پنیر و کره ممتاز',    de: 'Premium Käse & Butter', catId: 2,  catFa: 'لبنیات',        catDe: 'Milchprodukte',    price: 4.99, bFa: 'ویژه',   bDe: 'Premium',        emoji: '🧀', imgBg: '#fff', img: '/images/products/cheese.jpg' },
 ];
 
 export const SERVICES: Service[] = [

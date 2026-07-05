@@ -37,7 +37,12 @@ export default function CartPage() {
             <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
               {cart.map(item => (
                 <div key={item.id} className="cart-item" style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
-                  <div style={{ width:68, height:68, borderRadius:14, background:item.imgBg, display:'flex', alignItems:'center', justifyContent:'center', fontSize:32, flexShrink:0 }}>{item.emoji}</div>
+                  <div style={{ width:68, height:68, borderRadius:14, background:item.imgBg, border:'1px solid var(--border-l)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:32, flexShrink:0, overflow:'hidden' }}>
+                    {item.img
+                      // eslint-disable-next-line @next/next/no-img-element
+                      ? <img src={item.img} alt={lang === 'fa' ? item.fa : item.de} style={{ width:'100%', height:'100%', objectFit:'contain' }} />
+                      : item.emoji}
+                  </div>
                   <div style={{ flex:1, minWidth:130 }}>
                     <div style={{ fontWeight:600, fontSize:14, color:'var(--charcoal)', marginBottom:3 }}>{lang === 'fa' ? item.fa : item.de}</div>
                     <div style={{ fontSize:12, color:'var(--light)' }}>{lang === 'fa' ? item.catFa : item.catDe}</div>
