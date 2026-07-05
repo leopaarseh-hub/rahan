@@ -179,6 +179,26 @@ body {
   border-radius: 28px;
   filter: drop-shadow(0 28px 60px rgba(0,0,0,0.45));
 }
+.hero-photo-frame {
+  position: relative; width: 100%; max-width: 470px;
+  padding: 9px; border-radius: 30px;
+  background: linear-gradient(160deg, rgba(212,175,55,.55) 0%, rgba(212,175,55,.12) 45%, rgba(212,175,55,.45) 100%);
+  box-shadow: 0 30px 70px rgba(0,0,0,.5);
+}
+.hero-photo {
+  display: block; width: 100%; height: auto; border-radius: 22px;
+}
+.hero-photo-caption {
+  position: absolute; left: 9px; right: 9px; bottom: 9px;
+  border-radius: 0 0 22px 22px; padding: 34px 18px 14px;
+  background: linear-gradient(180deg, transparent 0%, rgba(9,16,12,.55) 40%, rgba(9,16,12,.92) 100%);
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-photo-caption-badge {
+  width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+  border: 1px solid rgba(212,175,55,.5); background: rgba(212,175,55,.14);
+  display: flex; align-items: center; justify-content: center;
+}
 .hero-crest {
   position: relative; width: 100%; max-width: 430px;
   padding: 52px 36px 44px; text-align: center;
@@ -205,6 +225,7 @@ body {
   .hero-img-wrap { flex: 0 0 100%; order: 1; }
   .hero-img { max-width: 310px; margin: 0 auto; display: block; }
   .hero-crest { max-width: 340px; margin: 0 auto; padding: 40px 26px 36px; }
+  .hero-photo-frame { max-width: 350px; margin: 0 auto; }
   .two-col-map, .about-grid, .contact-grid, .cart-grid { grid-template-columns: 1fr !important; }
   .footer-grid { grid-template-columns: 1fr 1fr !important; }
 }

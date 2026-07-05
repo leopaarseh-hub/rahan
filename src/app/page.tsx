@@ -6,7 +6,7 @@ import { CATS, MAPS_URL } from '@/lib/data';
 import { PRODUCTS } from '@/lib/data';
 import ProductCard from '@/components/ProductCard';
 import { SectionHead, InfoRow, LiveMap } from '@/components/UI';
-import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon, CrownIcon, SaffronIcon, WheatIcon, TeapotIcon, HoneyIcon, BreadIcon } from '@/components/Icons';
+import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon, CrownIcon } from '@/components/Icons';
 import { withBase } from '@/lib/data';
 
 export default function HomePage() {
@@ -50,28 +50,22 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero crest */}
+            {/* Hero storefront photo */}
             <div className="hero-img-wrap">
               <div style={{ position:'relative', display:'flex', alignItems:'center', justifyContent:'center', width:'100%' }}>
-                <div style={{ position:'absolute', width:'96%', height:'96%', borderRadius:'50%', background:'radial-gradient(circle, rgba(212,175,55,.22) 0%, transparent 72%)', pointerEvents:'none' }} />
-                <div className="hero-crest">
-                  <div className="hero-crest-ring">
-                    <CrownIcon size={44} stroke="var(--gold-l)" />
+                <div style={{ position:'absolute', width:'104%', height:'104%', borderRadius:'50%', background:'radial-gradient(circle, rgba(212,175,55,.22) 0%, transparent 72%)', pointerEvents:'none' }} />
+                <div className="hero-photo-frame">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={withBase('/images/storefront.jpg')} alt="Kian Supermarkt — Luxemburger Str. 12, Köln" className="hero-photo" />
+                  <div className="hero-photo-caption">
+                    <span className="hero-photo-caption-badge">
+                      <CrownIcon size={17} stroke="var(--gold-l)" />
+                    </span>
+                    <div>
+                      <div className="fa-font" style={{ fontSize:16, fontWeight:600, color:'#fff', lineHeight:1.3 }}>سوپر مارکت کیان</div>
+                      <div style={{ fontSize:10.5, letterSpacing:'.16em', color:'rgba(212,175,55,.95)', fontWeight:600, marginTop:2 }}>LUXEMBURGER STR. 12 · 50674 KÖLN</div>
+                    </div>
                   </div>
-                  <div className="d-font gold-grad" style={{ fontSize:'clamp(40px,4.5vw,58px)', fontWeight:700, letterSpacing:'.32em', textIndent:'.32em', lineHeight:1.1, paddingBottom:4 }}>KIAN</div>
-                  <div className="fa-font" style={{ fontSize:20, color:'rgba(255,255,255,.85)', fontWeight:500 }}>کیان مارکت</div>
-                  <div className="ornament" style={{ margin:'18px 0' }}>
-                    <span className="ornament-gem" />
-                  </div>
-                  <div style={{ fontSize:12, letterSpacing:'.28em', textIndent:'.28em', color:'rgba(212,175,55,.85)', textTransform:'uppercase', fontWeight:600 }}>Premium Markt · Köln</div>
-                  <div style={{ display:'flex', gap:12, justifyContent:'center', marginTop:26 }}>
-                    {[SaffronIcon, WheatIcon, TeapotIcon, HoneyIcon, BreadIcon].map((Icon, i) => (
-                      <span key={i} style={{ width:38, height:38, borderRadius:'50%', border:'1px solid rgba(212,175,55,.35)', background:'rgba(212,175,55,.08)', display:'flex', alignItems:'center', justifyContent:'center' }}>
-                        <Icon size={18} stroke="var(--gold-l)" />
-                      </span>
-                    ))}
-                  </div>
-                  <div style={{ fontSize:11, letterSpacing:'.14em', color:'rgba(255,255,255,.38)', marginTop:22 }}>LUXEMBURGER STR. 12 · 50674 KÖLN</div>
                 </div>
               </div>
             </div>
