@@ -10,8 +10,9 @@ export default function CategoriesPage() {
   const t = T[lang];
   return (
     <>
-      <div style={{ background:'linear-gradient(135deg, var(--olive), #4D6B59)', padding:'52px 0 40px' }}>
-        <div className="container">
+      <div className="dark-lux" style={{ padding:'52px 0 40px' }}>
+        <div className="hero-pattern" />
+        <div className="container" style={{ position:'relative' }}>
           <p style={{ color:'rgba(255,255,255,.45)', fontSize:13, marginBottom:6 }}>Kian Markt</p>
           <h1 className="d-font" style={{ fontSize:'clamp(30px,5vw,52px)', fontWeight:700, color:'#fff', letterSpacing:'-0.02em' }}>{t.catsTitle}</h1>
         </div>
