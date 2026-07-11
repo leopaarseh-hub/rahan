@@ -24,6 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#131513" />
       </head>
       <body>
+        <div className="liquid-bg" aria-hidden>
+          <span className="blob b1" /><span className="blob b2" /><span className="blob b3" /><span className="blob b4" />
+        </div>
         <Providers>{children}</Providers>
       </body>
     </html>
