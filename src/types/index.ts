@@ -42,6 +42,28 @@ export interface BenefitItem {
   desc: string;
 }
 
+export interface OrderT {
+  formTitle: string;
+  firstName: string;
+  lastName: string;
+  address: string;
+  postCode: string;
+  phone: string;
+  submit: string;
+  note: string;
+  postCodeError: string;
+  requiredError: string;
+  msgTitle: string;
+  msgProducts: string;
+  msgTotal: string;
+  msgName: string;
+  msgLastName: string;
+  msgAddress: string;
+  msgPostCode: string;
+  msgPhone: string;
+  msgFooter: string;
+}
+
 export interface LocationT {
   label: string;
   title: string;
@@ -69,6 +91,7 @@ export interface Translation {
   seeAll: string;
   benefits: { label: string; title: string; sub: string; items: BenefitItem[] };
   location: LocationT;
+  order: OrderT;
   footerDesc: string;
   copyright: string;
   shopTitle: string;

@@ -3,6 +3,12 @@ import { Category, Product, Service } from '@/types';
 // Prefix asset paths with the deployment base path (e.g. /rahan on GitHub Pages)
 export const withBase = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${path}`;
 
+// Store WhatsApp number in international format (0221 93290358 → +49)
+export const WHATSAPP_PHONE = '4922193290358';
+
+// Köln postcode range — deliveries are only made within the city
+export const KOELN_PLZ = { min: 50667, max: 51149 };
+
 export const MAPS_URL =
   'https://maps.google.com/maps/place//data=!4m2!3m1!1s0x47bf2300ca89d765:0x861c99e70b9ee4d9?entry=s&sa=X&ved=2ahUKEwjn09_ttLyVAxWaSKQEHep8K0IQ4kB6BAgbEAA&hl=en';
 
@@ -46,8 +52,8 @@ export const SERVICES: Service[] = [
   { iconName: 'Leaf',      fa: 'محصولات تازه روزانه',    de: 'Täglich frische Waren',         dFa: 'هر روز محصولات تازه مستقیم از تامین‌کنندگان',             dDe: 'Täglich frische Produkte direkt von den Lieferanten'     },
   { iconName: 'Globe',     fa: 'محصولات اصیل',           de: 'Authentische Produkte',         dFa: 'محصولات اصیل ایرانی و افغانی از بهترین منابع',            dDe: 'Authentische iranische & afghanische Produkte'           },
   { iconName: 'Mail',      fa: 'سفارش ویژه',             de: 'Sonderbestellungen',            dFa: 'درخواست محصولات خاص که در فروشگاه موجود نیست',            dDe: 'Anfragen für spezielle Produkte'                         },
-  { iconName: 'MapPin',    fa: 'تحویل حضوری',            de: 'Abholung vor Ort',             dFa: 'خرید راحت و سریع از فروشگاه به صورت حضوری',              dDe: 'Bequemes Einkaufen direkt im Laden'                      },
-  { iconName: 'Cart',      fa: 'سفارش آنلاین (به زودی)', de: 'Online-Bestellung (demnächst)', dFa: 'به زودی امکان سفارش آنلاین فراهم می‌شود',                 dDe: 'Online-Bestellung kommt bald'                            },
+  { iconName: 'MapPin',    fa: 'ارسال در شهر کلن',       de: 'Lieferung in Köln',             dFa: 'ارسال سفارش فقط در محدوده شهر کلن انجام می‌شود',          dDe: 'Lieferung nur innerhalb von Köln'                        },
+  { iconName: 'Cart',      fa: 'سفارش واتساپی',          de: 'WhatsApp-Bestellung',           dFa: 'سفارش آسان از طریق واتساپ و هماهنگی قیمت و جزئیات',       dDe: 'Einfach per WhatsApp bestellen — Preis & Details stimmen wir gemeinsam ab' },
 ];
 
 export const BADGE_STYLE: Record<string, { bg: string; color: string }> = {
