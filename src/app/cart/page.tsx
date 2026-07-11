@@ -1,16 +1,49 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useCart } from '@/contexts/CartContext';
 import { T } from '@/lib/translations';
-import { withBase } from '@/lib/data';
-import { ArrowLeftIcon, ArrowRightIcon, MinusIcon, PlusIcon, TrashIcon, LockIcon, CartIcon, CrownIcon } from '@/components/Icons';
+import { withBase, WHATSAPP_PHONE, KOELN_PLZ } from '@/lib/data';
+import { ArrowLeftIcon, MinusIcon, PlusIcon, TrashIcon, LockIcon, CartIcon, CrownIcon, WhatsAppIcon } from '@/components/Icons';
 
 export default function CartPage() {
   const { lang } = useLanguage();
   const { cart, updateQty, removeFromCart } = useCart();
   const t = T[lang];
+  const o = t.order;
   const sub = cart.reduce((s, i) => s + i.price * i.qty, 0);
+
+  const [form, setForm] = useState({ firstName: '', lastName: '', address: '', postCode: '', phone: '' });
+  const [error, setError] = useState('');
+  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
+    setForm(f => ({ ...f, [k]: e.target.value }));
+
+  const orderViaWhatsApp = () => {
+    if (Object.values(form).some(v => !v.trim())) { setError(o.requiredError); return; }
+    const plz = parseInt(form.postCode.replace(/[^0-9]/g, ''), 10);
+    if (isNaN(plz) || plz < KOELN_PLZ.min || plz > KOELN_PLZ.max) { setError(o.postCodeError); return; }
+    setError('');
+    const lines = cart.map(i =>
+      `• ${lang === 'fa' ? i.fa : i.de} ×${i.qty} — €${(i.price * i.qty).toFixed(2)}`);
+    const msg = [
+      `🛒 ${o.msgTitle}`,
+      '',
+      `📦 ${o.msgProducts}:`,
+      ...lines,
+      '',
+      `💰 ${o.msgTotal}: €${sub.toFixed(2)}`,
+      '',
+      `👤 ${o.msgName}: ${form.firstName.trim()}`,
+      `👤 ${o.msgLastName}: ${form.lastName.trim()}`,
+      `📍 ${o.msgAddress}: ${form.address.trim()}`,
+      `📮 ${o.msgPostCode}: ${form.postCode.trim()}`,
+      `📞 ${o.msgPhone}: ${form.phone.trim()}`,
+      '',
+      `🚚 ${o.msgFooter}`,
+    ].join('\n');
+    window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+  };
 
   return (
     <>
@@ -77,12 +110,30 @@ export default function CartPage() {
                   <span>{t.total}</span><span className="d-font">€{sub.toFixed(2)}</span>
                 </div>
               </div>
-              <button className="btn btn-primary btn-full" style={{ marginTop:24, padding:'13px 0', fontSize:15, display:'flex', alignItems:'center', justifyContent:'center', gap:8 }}>
-                {t.checkout} <ArrowRightIcon size={16} stroke="#fff" />
+              <div className="divider" style={{ margin:'22px 0 18px' }} />
+              <h4 style={{ fontWeight:700, fontSize:14, marginBottom:14, color:'var(--charcoal)' }}>{o.formTitle}</h4>
+              <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+                <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+                  <input className="input" placeholder={o.firstName} value={form.firstName} onChange={set('firstName')} />
+                  <input className="input" placeholder={o.lastName} value={form.lastName} onChange={set('lastName')} />
+                </div>
+                <input className="input" placeholder={o.address} value={form.address} onChange={set('address')} />
+                <div style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:10 }}>
+                  <input className="input" placeholder={o.postCode} value={form.postCode} onChange={set('postCode')} inputMode="numeric" />
+                  <input className="input" placeholder={o.phone} value={form.phone} onChange={set('phone')} inputMode="tel" dir="ltr" />
+                </div>
+              </div>
+              {error && (
+                <div style={{ marginTop:12, background:'var(--terra-fade)', color:'var(--terra)', borderRadius:10, padding:'10px 14px', fontSize:13, fontWeight:500 }}>
+                  {error}
+                </div>
+              )}
+              <button onClick={orderViaWhatsApp} className="btn btn-full" style={{ marginTop:16, padding:'13px 0', fontSize:15, display:'flex', alignItems:'center', justifyContent:'center', gap:9, background:'linear-gradient(135deg, #1DA851 0%, #25D366 100%)', color:'#fff', borderRadius:12, boxShadow:'0 6px 18px rgba(37,211,102,.3)' }}>
+                <WhatsAppIcon size={18} stroke="#fff" /> {o.submit}
               </button>
               <div className="alert" style={{ marginTop:16, display:'flex', alignItems:'flex-start', gap:8 }}>
                 <LockIcon size={14} stroke="var(--gold)" style={{ flexShrink:0, marginTop:1 }} />
-                <span>{t.cartNote}</span>
+                <span>{o.note}</span>
               </div>
             </div>
           </div>
