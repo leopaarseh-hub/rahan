@@ -19,8 +19,8 @@ export default function HomePage() {
       {/* ── Hero ── */}
       <section className="hero">
         <div className="hero-pattern" />
-        <div style={{ position:'absolute', top:'8%', right:'4%', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(184,137,46,.16) 0%, transparent 70%)', pointerEvents:'none' }} />
-        <div style={{ position:'absolute', bottom:'12%', left:'2%', width:280, height:280, borderRadius:'50%', background:'radial-gradient(circle, rgba(116,151,127,.14) 0%, transparent 70%)', pointerEvents:'none' }} />
+        <div style={{ position:'absolute', top:'8%', right:'4%', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(212,175,55,.14) 0%, transparent 70%)', pointerEvents:'none' }} />
+        <div style={{ position:'absolute', bottom:'12%', left:'2%', width:280, height:280, borderRadius:'50%', background:'radial-gradient(circle, rgba(232,206,126,.09) 0%, transparent 70%)', pointerEvents:'none' }} />
 
         <div className="container" style={{ position:'relative', zIndex:1 }}>
           <div style={{ display:'flex', alignItems:'center', gap:'clamp(24px,5vw,64px)', flexWrap:'wrap' }}>
@@ -113,8 +113,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Benefits ── */}
-      <section className="section" style={{ background:'var(--olive)', position:'relative', overflow:'hidden' }}>
-        <div style={{ position:'absolute', inset:0, opacity:.06, backgroundImage:`url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4AF37'%3E%3Cpath d='M40 4L52 28H76L55 43L63 67L40 52L17 67L25 43L4 28H28Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize:'80px 80px' }} />
+      <section className="section dark-lux">
+        <div className="hero-pattern" />
         <div className="container" style={{ position:'relative' }}>
           <SectionHead eyebrow={t.benefits.label} title={t.benefits.title} sub={t.benefits.sub} light />
           <div className="g4">
