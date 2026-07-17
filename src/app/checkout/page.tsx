@@ -38,13 +38,13 @@ export default function CheckoutPage() {
     const lines = cart.map((i, n) =>
       `${rtl}${n + 1}. ${fa ? i.fa : i.de}  (${times}${i.qty})  =  ${(i.price * i.qty).toFixed(2)} ${cur}`);
     let msg = [
-      `${rtl}*${o.msgTitle}*`,
+      `*${rtl}${o.msgTitle}*`,
       SEP,
       '',
-      `${rtl}*${o.msgProducts}:*`,
+      `*${rtl}${o.msgProducts}:*`,
       ...lines,
       '',
-      `${rtl}*${o.msgTotal}: ${sub.toFixed(2)} ${cur}*`,
+      `*${rtl}${o.msgTotal}: ${sub.toFixed(2)} ${cur}*`,
       '',
       SEP,
       `${rtl}${o.msgName}: ${form.firstName.trim()}`,
