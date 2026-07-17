@@ -6,7 +6,7 @@ import { CATS, MAPS_URL } from '@/lib/data';
 import { PRODUCTS } from '@/lib/data';
 import ProductCard from '@/components/ProductCard';
 import { SectionHead, InfoRow, LiveMap } from '@/components/UI';
-import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon, CrownIcon } from '@/components/Icons';
+import { ArrowRightIcon, MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon, CheckCircleIcon } from '@/components/Icons';
 import { withBase } from '@/lib/data';
 
 export default function HomePage() {
@@ -58,9 +58,9 @@ export default function HomePage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={withBase('/images/storefront.jpg')} alt="Kian Supermarkt — Luxemburger Str. 12, Köln" className="hero-photo" />
                   <div className="hero-photo-caption">
-                    <span className="hero-photo-caption-badge">
-                      <CrownIcon size={17} stroke="var(--gold-l)" />
-                    </span>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+                      style={{ width: 40, height: 40, borderRadius: '50%', flexShrink: 0, boxShadow: '0 0 0 1.5px rgba(212,175,55,.5)' }} />
                     <div>
                       <div className="fa-font" style={{ fontSize:16, fontWeight:600, color:'#fff', lineHeight:1.3 }}>سوپر مارکت کیان</div>
                       <div style={{ fontSize:10.5, letterSpacing:'.16em', color:'rgba(212,175,55,.95)', fontWeight:600, marginTop:2 }}>LUXEMBURGER STR. 12 · 50674 KÖLN</div>

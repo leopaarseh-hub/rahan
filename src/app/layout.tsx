@@ -22,6 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#131513" />
+        <link rel="icon" type="image/png" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.png`} />
+        <link rel="apple-touch-icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/apple-icon.png`} />
       </head>
       <body>
         <div className="liquid-bg" aria-hidden>

@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { T } from '@/lib/translations';
-import { LeafIcon, MailIcon, LockIcon, UserIcon, ArrowLeftIcon } from '@/components/Icons';
+import { withBase } from '@/lib/data';
+import { MailIcon, LockIcon, UserIcon, ArrowLeftIcon } from '@/components/Icons';
 
 export default function LoginPage() {
   const { lang } = useLanguage();
@@ -11,9 +12,9 @@ export default function LoginPage() {
     <div style={{ minHeight:'82vh', display:'flex', alignItems:'center', justifyContent:'center', padding:'40px 24px', background:'var(--cream-mid)' }}>
       <div style={{ width:'100%', maxWidth:430 }}>
         <div style={{ textAlign:'center', marginBottom:32 }}>
-          <div style={{ width:58, height:58, background:'var(--olive)', borderRadius:16, display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 16px' }}>
-            <LeafIcon size={26} stroke="#fff" />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+            style={{ width:72, height:72, borderRadius:'50%', margin:'0 auto 16px', display:'block', boxShadow:'0 0 0 2px rgba(212,175,55,.45), 0 8px 22px rgba(0,0,0,.18)' }} />
           <div className="d-font" style={{ fontSize:26, fontWeight:700, color:'var(--olive)', marginBottom:4 }}>Kian Markt</div>
           <div className="fa-font" style={{ fontSize:13, color:'var(--mid)' }}>کیان مارکت</div>
         </div>
