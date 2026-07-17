@@ -29,17 +29,29 @@ export default function CheckoutPage() {
     const plz = parseInt(form.postCode.replace(/[^0-9]/g, ''), 10);
     if (isNaN(plz) || plz < KOELN_PLZ.min || plz > KOELN_PLZ.max) { setError(o.postCodeError); return; }
     setError('');
-    const lines = cart.map(i => `• ${lang === 'fa' ? i.fa : i.de} ×${i.qty} — €${(i.price * i.qty).toFixed(2)}`);
+    // RLM keeps Farsi lines right-to-left even when they end with Latin digits
+    const rtl = lang === 'fa' ? '‏' : '';
+    const SEP = '----------------------------';
+    const lines = cart.map((i, n) =>
+      `${rtl}${n + 1}. ${lang === 'fa' ? i.fa : i.de}  (x${i.qty})  =  ${(i.price * i.qty).toFixed(2)} EUR`);
     const msg = [
-      `🛒 ${o.msgTitle}`, '',
-      `📦 ${o.msgProducts}:`, ...lines, '',
-      `💰 ${o.msgTotal}: €${sub.toFixed(2)}`, '',
-      `👤 ${o.msgName}: ${form.firstName.trim()}`,
-      `👤 ${o.msgLastName}: ${form.lastName.trim()}`,
-      `📍 ${o.msgAddress}: ${form.address.trim()}`,
-      `📮 ${o.msgPostCode}: ${form.postCode.trim()}`,
-      `📞 ${o.msgPhone}: ${form.phone.trim()}`, '',
-      `🚚 ${o.msgFooter}`,
+      `${rtl}*${o.msgTitle}*`,
+      SEP,
+      '',
+      `${rtl}*${o.msgProducts}:*`,
+      ...lines,
+      '',
+      `${rtl}*${o.msgTotal}: ${sub.toFixed(2)} EUR*`,
+      '',
+      SEP,
+      `${rtl}${o.msgName}: ${form.firstName.trim()}`,
+      `${rtl}${o.msgLastName}: ${form.lastName.trim()}`,
+      `${rtl}${o.msgAddress}: ${form.address.trim()}`,
+      `${rtl}${o.msgPostCode}: ${form.postCode.trim()}`,
+      `${rtl}${o.msgPhone}: ${form.phone.trim()}`,
+      SEP,
+      '',
+      `${rtl}_${o.msgFooter}_`,
     ].join('\n');
     const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
     setWaUrl(url);
