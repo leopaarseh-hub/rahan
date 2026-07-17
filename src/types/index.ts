@@ -42,6 +42,20 @@ export interface BenefitItem {
   desc: string;
 }
 
+export interface CheckoutT {
+  title: string;
+  step1: string;
+  step2: string;
+  step3: string;
+  proceed: string;
+  back: string;
+  sending: string;
+  doneTitle: string;
+  doneSub: string;
+  reopen: string;
+  backShop: string;
+}
+
 export interface OrderT {
   formTitle: string;
   firstName: string;
@@ -79,8 +93,6 @@ export interface Translation {
   dir: 'rtl' | 'ltr';
   fontClass: string;
   nav: { home: string; shop: string; cats: string; services: string; about: string; contact: string };
-  login: string;
-  loginFull: string;
   langLabel: string;
   cartTitle: string;
   brandName: string;
@@ -92,6 +104,7 @@ export interface Translation {
   benefits: { label: string; title: string; sub: string; items: BenefitItem[] };
   location: LocationT;
   order: OrderT;
+  checkout: CheckoutT;
   footerDesc: string;
   copyright: string;
   shopTitle: string;
@@ -103,18 +116,11 @@ export interface Translation {
   noResults: string;
   cartEmpty: string;
   continueShopping: string;
-  checkout: string;
   subtotal: string;
   delivery: string;
   total: string;
   cartNote: string;
   remove: string;
-  email: string;
-  password: string;
-  loginBtn: string;
-  noAccount: string;
-  register: string;
-  loginNote: string;
   aboutTitle: string;
   aboutStory: string[];
   contactTitle: string;

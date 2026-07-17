@@ -368,5 +368,51 @@ body {
 /* ─── Footer ─────────────────────────────────────────────────── */
 .footer { background: linear-gradient(165deg, #071F16 0%, #0B2B1E 100%); color: #C9D4CC; }
 
+/* ─── Checkout flow ──────────────────────────────────────────── */
+.steps { display: flex; align-items: flex-start; justify-content: center; }
+.step-dot {
+  width: 38px; height: 38px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; transition: all .3s ease;
+}
+.step-dot.todo   { background: #fff; border: 1.5px solid var(--border); color: var(--light); }
+.step-dot.active { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-l) 100%); color: #fff; box-shadow: 0 0 0 5px var(--gold-fade), 0 4px 12px rgba(184,137,46,.35); }
+.step-dot.done   { background: linear-gradient(135deg, var(--olive) 0%, var(--olive-l) 100%); color: #fff; }
+.step-line {
+  width: clamp(40px, 9vw, 110px); height: 2px; margin: 18px 10px 0;
+  background: var(--border); border-radius: 1px; transition: background .3s;
+}
+.step-line.on { background: linear-gradient(90deg, var(--olive-l), var(--gold)); }
+
+.field label {
+  display: block; font-size: 12.5px; font-weight: 600;
+  color: var(--charcoal-m); margin-bottom: 6px;
+}
+.lux-card { position: relative; overflow: hidden; }
+.lux-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--olive), var(--gold-l), var(--pom), var(--gold-l), var(--olive));
+}
+
+.success-ring {
+  width: 96px; height: 96px; border-radius: 50%; margin: 0 auto;
+  background: linear-gradient(135deg, #1DA851 0%, #25D366 100%);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 10px rgba(37,211,102,.14), 0 14px 34px rgba(29,168,81,.35);
+  animation: successPop .55s cubic-bezier(.2, 1.4, .4, 1) both;
+}
+@keyframes successPop {
+  0%   { transform: scale(.4); opacity: 0; }
+  70%  { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.lux-spinner {
+  width: 58px; height: 58px; margin: 0 auto; border-radius: 50%;
+  border: 3px solid var(--gold-fade); border-top-color: var(--gold);
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
 /* ─── Misc ───────────────────────────────────────────────────── */
 .icon-box { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
