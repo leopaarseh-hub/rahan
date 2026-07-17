@@ -30,32 +30,39 @@ export default function CheckoutPage() {
     if (isNaN(plz) || plz < KOELN_PLZ.min || plz > KOELN_PLZ.max) { setError(o.postCodeError); return; }
     setError('');
     const fa = lang === 'fa';
-    // RLM keeps Farsi lines right-to-left even when they contain Latin text
-    const rtl = fa ? '‏' : '';
     const cur = fa ? 'یورو' : 'EUR';
     const times = fa ? '×' : 'x';
     const SEP = '----------------------------';
     const lines = cart.map((i, n) =>
-      `${rtl}${n + 1}. ${fa ? i.fa : i.de}  (${times}${i.qty})  =  ${(i.price * i.qty).toFixed(2)} ${cur}`);
+      `${n + 1}. ${fa ? i.fa : i.de}  (${times}${i.qty})  =  ${(i.price * i.qty).toFixed(2)} ${cur}`);
     let msg = [
-      `*${rtl}${o.msgTitle}*`,
+      `*${o.msgTitle}*`,
       SEP,
       '',
-      `*${rtl}${o.msgProducts}:*`,
+      `*${o.msgProducts}:*`,
       ...lines,
       '',
-      `*${rtl}${o.msgTotal}: ${sub.toFixed(2)} ${cur}*`,
+      `*${o.msgTotal}: ${sub.toFixed(2)} ${cur}*`,
       '',
       SEP,
-      `${rtl}${o.msgName}: ${form.firstName.trim()}`,
-      `${rtl}${o.msgLastName}: ${form.lastName.trim()}`,
-      `${rtl}${o.msgAddress}: ${form.address.trim()}`,
-      `${rtl}${o.msgPostCode}: ${form.postCode.trim()}`,
-      `${rtl}${o.msgPhone}: ${form.phone.trim()}`,
+      `${o.msgName}: ${form.firstName.trim()}`,
+      `${o.msgLastName}: ${form.lastName.trim()}`,
+      `${o.msgAddress}: ${form.address.trim()}`,
+      `${o.msgPostCode}: ${form.postCode.trim()}`,
+      `${o.msgPhone}: ${form.phone.trim()}`,
       SEP,
     ].join('\n');
-    // Farsi message uses Persian digits everywhere
-    if (fa) msg = msg.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[+d]);
+    if (fa) {
+      // Persian digits everywhere
+      msg = msg.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[+d]);
+      // Force right-to-left rendering: every line starts with an RTL mark
+      // (after the opening * on bold lines so WhatsApp bold still parses)
+      const RLM = '‏';
+      msg = msg
+        .split('\n')
+        .map(l => (l === '' ? l : l.startsWith('*') ? `${RLM}*${RLM}${l.slice(1)}` : `${RLM}${l}`))
+        .join('\n');
+    }
     const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
     setWaUrl(url);
     // open synchronously within the click gesture so browsers allow the popup
