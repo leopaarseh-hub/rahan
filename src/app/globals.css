@@ -173,7 +173,13 @@ body {
   font-family: inherit;
 }
 .input:focus { border-color: var(--olive); box-shadow: 0 0 0 3px rgba(34,69,58,.08); }
-[dir="rtl"] .input { text-align: right; }
+/* All form controls follow the document direction (Farsi = RTL). Explicit dir="ltr" on a field (e.g. phone) still wins. */
+[dir="rtl"] input:not([dir="ltr"]), [dir="rtl"] textarea:not([dir="ltr"]), [dir="rtl"] select {
+  direction: rtl; text-align: right;
+}
+[dir="ltr"] input, [dir="ltr"] textarea, [dir="ltr"] select {
+  direction: ltr; text-align: left;
+}
 
 /* ─── Badge ──────────────────────────────────────────────────── */
 .badge { display: inline-block; padding: 3px 11px; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: .03em; }
