@@ -21,6 +21,8 @@ export default function CheckoutPage() {
   const [error, setError] = useState('');
   const [phase, setPhase] = useState<Phase>('form');
   const [waUrl, setWaUrl] = useState('');
+  const [waMsg, setWaMsg] = useState('');
+  const [copied, setCopied] = useState(false);
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm(f => ({ ...f, [k]: e.target.value }));
 
@@ -64,6 +66,7 @@ export default function CheckoutPage() {
         .join('\n');
     }
     const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
+    setWaMsg(msg);
     setWaUrl(url);
     // open synchronously within the click gesture so browsers allow the popup
     window.open(url, '_blank', 'noopener');
@@ -125,6 +128,11 @@ export default function CheckoutPage() {
               <a href={waUrl} target="_blank" rel="noreferrer" className="btn btn-full" style={{ maxWidth:280, padding:'13px 0', fontSize:15, display:'flex', alignItems:'center', justifyContent:'center', gap:9, background:'linear-gradient(135deg, #1DA851 0%, #25D366 100%)', color:'#fff', borderRadius:12, textDecoration:'none', boxShadow:'0 6px 18px rgba(37,211,102,.3)' }}>
                 <WhatsAppIcon size={18} stroke="#fff" /> {c.reopen}
               </a>
+              <button className="btn btn-outline"
+                onClick={() => { navigator.clipboard?.writeText(waMsg).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2500); }); }}
+                style={{ display:'inline-flex', alignItems:'center', gap:7 }}>
+                {copied ? c.copied : c.copy}
+              </button>
               <Link href="/shop" className="btn btn-outline" style={{ textDecoration:'none', display:'inline-flex', alignItems:'center', gap:7 }}>
                 <ArrowLeftIcon size={15} stroke="var(--olive)" /> {c.backShop}
               </Link>

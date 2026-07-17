@@ -51,6 +51,8 @@ export const T: Record<'fa' | 'de', Translation> = {
       doneSub: 'واتساپ باز شد — پیام سفارش را ارسال کنید تا قیمت و جزئیات را با هم هماهنگ کنیم.',
       reopen: 'باز کردن دوباره واتساپ',
       backShop: 'بازگشت به فروشگاه',
+      copy: 'کپی متن سفارش',
+      copied: 'کپی شد!',
     },
     order: {
       formTitle: 'اطلاعات ارسال',
@@ -148,6 +150,8 @@ export const T: Record<'fa' | 'de', Translation> = {
       doneSub: 'WhatsApp wurde geöffnet — senden Sie die Nachricht ab, wir bestätigen Preis & Details im Chat.',
       reopen: 'WhatsApp erneut öffnen',
       backShop: 'Zurück zum Shop',
+      copy: 'Bestelltext kopieren',
+      copied: 'Kopiert!',
     },
     order: {
       formTitle: 'Lieferdaten',

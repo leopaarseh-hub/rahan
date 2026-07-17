@@ -54,6 +54,8 @@ export interface CheckoutT {
   doneSub: string;
   reopen: string;
   backShop: string;
+  copy: string;
+  copied: string;
 }
 
 export interface OrderT {
