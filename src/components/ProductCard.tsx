@@ -34,7 +34,7 @@ export default function ProductCard({ product: p }: { product: Product }) {
           {lang === 'fa' ? p.fa : p.de}
         </h3>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
-          <span className="d-font" style={{ fontSize: 22, fontWeight: 700, color: 'var(--olive)', letterSpacing: '-0.02em' }}>
+          <span className="d-font" style={{ fontSize: 22, fontWeight: 700, color: 'var(--pom)', letterSpacing: '-0.02em' }}>
             €{p.price.toFixed(2)}
           </span>
           <button

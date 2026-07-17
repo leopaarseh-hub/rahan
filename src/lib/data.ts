@@ -16,20 +16,20 @@ export const MAP_EMBED =
   'https://maps.google.com/maps?q=Luxemburger+Str.+12%2C+50674+K%C3%B6ln%2C+Germany&hl=de&z=17&output=embed';
 
 export const CATS: Category[] = [
-  { id: 1,  fa: 'خشکبار و میوه خشک',  de: 'Nüsse & Trockenfrüchte',        emoji: '🥜', color: '#A07020', bg: '#F7EDD0', img: '/images/products/grapes.jpg' },
-  { id: 2,  fa: 'لبنیات',              de: 'Milchprodukte',                   emoji: '🧀', color: '#3A7055', bg: '#DCE9E2', img: '/images/categories/milk.jpg' },
-  { id: 3,  fa: 'گوشت و مرغ',          de: 'Fleisch & Geflügel',              emoji: '🥩', color: '#9B3A1E', bg: '#F5E4DC', img: '/images/categories/meat.jpg' },
-  { id: 4,  fa: 'برنج و غلات',          de: 'Reis & Getreide',                 emoji: '🌾', color: '#A07020', bg: '#F7EDD0', img: '/images/products/rice.jpg' },
-  { id: 5,  fa: 'ادویه‌جات',            de: 'Gewürze',                         emoji: '🌶️', color: '#9B3A1E', bg: '#F5E4DC', img: '/images/categories/spices.jpg' },
-  { id: 6,  fa: 'چای و نوشیدنی',        de: 'Tee & Getränke',                  emoji: '🫖', color: '#3B5249', bg: '#E8EEEA', img: '/images/products/tea.jpg' },
-  { id: 7,  fa: 'ترشی و مربا',          de: 'Eingelegte Speisen & Konfitüren', emoji: '🫙', color: '#3A7055', bg: '#DCE9E2', img: '/images/categories/jam.jpg' },
-  { id: 8,  fa: 'شیرینی و تنقلات',      de: 'Süßigkeiten & Snacks',            emoji: '🍯', color: '#A07020', bg: '#F7EDD0', img: '/images/categories/sweets.jpg' },
+  { id: 1,  fa: 'خشکبار و میوه خشک',  de: 'Nüsse & Trockenfrüchte',        emoji: '🥜', color: '#9A742A', bg: '#F7EDD0', img: '/images/products/grapes.jpg' },
+  { id: 2,  fa: 'لبنیات',              de: 'Milchprodukte',                   emoji: '🧀', color: '#166044', bg: '#DCE9E2', img: '/images/categories/milk.jpg' },
+  { id: 3,  fa: 'گوشت و مرغ',          de: 'Fleisch & Geflügel',              emoji: '🥩', color: '#A32222', bg: '#F5E4DC', img: '/images/categories/meat.jpg' },
+  { id: 4,  fa: 'برنج و غلات',          de: 'Reis & Getreide',                 emoji: '🌾', color: '#9A742A', bg: '#F7EDD0', img: '/images/products/rice.jpg' },
+  { id: 5,  fa: 'ادویه‌جات',            de: 'Gewürze',                         emoji: '🌶️', color: '#A32222', bg: '#F5E4DC', img: '/images/categories/spices.jpg' },
+  { id: 6,  fa: 'چای و نوشیدنی',        de: 'Tee & Getränke',                  emoji: '🫖', color: '#0E3B2A', bg: '#E8EEEA', img: '/images/products/tea.jpg' },
+  { id: 7,  fa: 'ترشی و مربا',          de: 'Eingelegte Speisen & Konfitüren', emoji: '🫙', color: '#166044', bg: '#DCE9E2', img: '/images/categories/jam.jpg' },
+  { id: 8,  fa: 'شیرینی و تنقلات',      de: 'Süßigkeiten & Snacks',            emoji: '🍯', color: '#9A742A', bg: '#F7EDD0', img: '/images/categories/sweets.jpg' },
   { id: 9,  fa: 'کنسرو و غذای آماده',   de: 'Konserven & Fertiggerichte',      emoji: '🥫', color: '#5A5A55', bg: '#EDEDEC', img: '/images/categories/cans.jpg' },
-  { id: 10, fa: 'سبزیجات تازه',         de: 'Frisches Gemüse',                 emoji: '🥬', color: '#3B5249', bg: '#E8EEEA', img: '/images/categories/broccoli.jpg' },
-  { id: 11, fa: 'نان و نانوایی',         de: 'Brot & Backwaren',                emoji: '🫓', color: '#A07020', bg: '#F7EDD0', img: '/images/products/bread.jpg' },
-  { id: 12, fa: 'محصولات ایرانی',        de: 'Iranische Produkte',              emoji: '🍃', color: '#3B5249', bg: '#E8EEEA', img: '/images/categories/persianrice.jpg' },
-  { id: 13, fa: 'محصولات افغانی',        de: 'Afghanische Produkte',            emoji: '🌙', color: '#9B3A1E', bg: '#F5E4DC', img: '/images/categories/buns.jpg' },
-  { id: 14, fa: 'لوازم خانگی',           de: 'Haushaltsbedarf',                 emoji: '🧴', color: '#3A7055', bg: '#DCE9E2', img: '/images/categories/household.jpg' },
+  { id: 10, fa: 'سبزیجات تازه',         de: 'Frisches Gemüse',                 emoji: '🥬', color: '#0E3B2A', bg: '#E8EEEA', img: '/images/categories/broccoli.jpg' },
+  { id: 11, fa: 'نان و نانوایی',         de: 'Brot & Backwaren',                emoji: '🫓', color: '#9A742A', bg: '#F7EDD0', img: '/images/products/bread.jpg' },
+  { id: 12, fa: 'محصولات ایرانی',        de: 'Iranische Produkte',              emoji: '🍃', color: '#0E3B2A', bg: '#E8EEEA', img: '/images/categories/persianrice.jpg' },
+  { id: 13, fa: 'محصولات افغانی',        de: 'Afghanische Produkte',            emoji: '🌙', color: '#A32222', bg: '#F5E4DC', img: '/images/categories/buns.jpg' },
+  { id: 14, fa: 'لوازم خانگی',           de: 'Haushaltsbedarf',                 emoji: '🧴', color: '#166044', bg: '#DCE9E2', img: '/images/categories/household.jpg' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -57,19 +57,19 @@ export const SERVICES: Service[] = [
 ];
 
 export const BADGE_STYLE: Record<string, { bg: string; color: string }> = {
-  Premium:          { bg: '#F7EDD0', color: '#A07020' },
-  Importiert:       { bg: '#E8EEEA', color: '#3B5249' },
-  Imported:         { bg: '#E8EEEA', color: '#3B5249' },
-  Frisch:           { bg: '#DCE9E2', color: '#3A7055' },
-  Fresh:            { bg: '#DCE9E2', color: '#3A7055' },
-  Beliebt:          { bg: '#F5E4DC', color: '#9B3A1E' },
-  Popular:          { bg: '#F5E4DC', color: '#9B3A1E' },
-  'Täglich frisch': { bg: '#DCE9E2', color: '#3A7055' },
-  اصل:              { bg: '#F7EDD0', color: '#A07020' },
-  تازه:             { bg: '#DCE9E2', color: '#3A7055' },
-  محبوب:            { bg: '#F5E4DC', color: '#9B3A1E' },
-  وارداتی:          { bg: '#E8EEEA', color: '#3B5249' },
-  ویژه:             { bg: '#F5E4DC', color: '#9B3A1E' },
+  Premium:          { bg: '#F7EDD0', color: '#9A742A' },
+  Importiert:       { bg: '#E8EEEA', color: '#0E3B2A' },
+  Imported:         { bg: '#E8EEEA', color: '#0E3B2A' },
+  Frisch:           { bg: '#DCE9E2', color: '#166044' },
+  Fresh:            { bg: '#DCE9E2', color: '#166044' },
+  Beliebt:          { bg: '#F5E4DC', color: '#A32222' },
+  Popular:          { bg: '#F5E4DC', color: '#A32222' },
+  'Täglich frisch': { bg: '#DCE9E2', color: '#166044' },
+  اصل:              { bg: '#F7EDD0', color: '#9A742A' },
+  تازه:             { bg: '#DCE9E2', color: '#166044' },
+  محبوب:            { bg: '#F5E4DC', color: '#A32222' },
+  وارداتی:          { bg: '#E8EEEA', color: '#0E3B2A' },
+  ویژه:             { bg: '#F5E4DC', color: '#A32222' },
 };
 
 export const CART_INIT: (Product & { qty: number })[] = [

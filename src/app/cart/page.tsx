@@ -86,7 +86,7 @@ export default function CartPage() {
                     <span style={{ minWidth:22, textAlign:'center', fontWeight:700, fontSize:15 }}>{item.qty}</span>
                     <button className="qty-btn" onClick={() => updateQty(item.id, +1)}><PlusIcon size={14} stroke="var(--olive)" /></button>
                   </div>
-                  <span className="d-font" style={{ fontWeight:700, fontSize:18, color:'var(--olive)', minWidth:72 }}>€{(item.price * item.qty).toFixed(2)}</span>
+                  <span className="d-font" style={{ fontWeight:700, fontSize:18, color:'var(--pom)', minWidth:72 }}>€{(item.price * item.qty).toFixed(2)}</span>
                   <button onClick={() => removeFromCart(item.id)} style={{ background:'var(--terra-fade)', color:'var(--terra)', border:'none', borderRadius:8, padding:'7px 10px', cursor:'pointer', display:'flex', alignItems:'center', gap:5, fontFamily:'inherit', fontSize:12, fontWeight:500 }}>
                     <TrashIcon size={13} stroke="var(--terra)" /> {t.remove}
                   </button>

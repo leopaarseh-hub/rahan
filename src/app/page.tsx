@@ -19,6 +19,8 @@ export default function HomePage() {
       {/* ── Hero ── */}
       <section className="hero">
         <div className="hero-pattern" />
+        <span className="arabesque tl" /><span className="arabesque tr" />
+        <span className="arabesque bl" /><span className="arabesque br" />
         <div style={{ position:'absolute', top:'8%', right:'4%', width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(212,175,55,.14) 0%, transparent 70%)', pointerEvents:'none' }} />
         <div style={{ position:'absolute', bottom:'12%', left:'2%', width:280, height:280, borderRadius:'50%', background:'radial-gradient(circle, rgba(232,206,126,.09) 0%, transparent 70%)', pointerEvents:'none' }} />
 
@@ -28,7 +30,7 @@ export default function HomePage() {
             {/* Text */}
             <div style={{ flex:'1 1 360px', minWidth:0 }}>
               <div className="a1" style={{ display:'inline-flex', alignItems:'center', gap:8, background:'rgba(184,137,46,.14)', border:'1px solid rgba(184,137,46,.3)', borderRadius:24, padding:'6px 16px', marginBottom:26 }}>
-                <span style={{ width:6, height:6, borderRadius:'50%', background:'var(--gold)', display:'inline-block', animation:'pulseDot 2s ease infinite' }} />
+                <span style={{ width:6, height:6, borderRadius:'50%', background:'var(--pom-l)', display:'inline-block', animation:'pulseDot 2s ease infinite' }} />
                 <span style={{ color:'var(--gold-l)', fontSize:13, fontWeight:500 }}>{t.hero.badge}</span>
               </div>
               <h1 className="d-font a2 gold-grad" style={{ fontSize:'clamp(44px,6vw,84px)', fontWeight:700, lineHeight:1.02, letterSpacing:'-0.02em', marginBottom:22, paddingBottom:6 }}>
