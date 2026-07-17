@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useCart } from '@/contexts/CartContext';
 import { T } from '@/lib/translations';
-import { CartIcon, UserIcon, MenuIcon, XIcon, ArrowRightIcon, ArrowLeftIcon } from './Icons';
+import { CartIcon, MenuIcon, XIcon, ArrowRightIcon, ArrowLeftIcon } from './Icons';
 import { Logo } from './UI';
 
 export default function Header() {
@@ -53,11 +53,6 @@ export default function Header() {
               onMouseEnter={e => (e.currentTarget.style.background = 'var(--olive-fade)')}
               onMouseLeave={e => (e.currentTarget.style.background = 'none')}
             >{t.langLabel}</button>
-
-            <Link href="/login" className="btn btn-outline btn-sm"
-              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-              <UserIcon size={14} stroke="var(--olive)" /> {t.login}
-            </Link>
 
             <Link href="/cart" style={{ position: 'relative', background: 'var(--olive)', border: 'none', borderRadius: 10, width: 42, height: 42, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}>
               <CartIcon size={20} stroke="#fff" />
@@ -117,9 +112,9 @@ export default function Header() {
 
           <div style={{ padding: '20px 16px', borderTop: '1px solid var(--border-l)', flexShrink: 0 }}>
             <button className="btn btn-primary btn-full"
-              onClick={() => go('/login')}
+              onClick={() => go('/cart')}
               style={{ padding: '13px 0', fontSize: 15, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-              <UserIcon size={16} stroke="#fff" /> {t.login}
+              <CartIcon size={16} stroke="#fff" /> {t.cartTitle}
             </button>
           </div>
         </div>
