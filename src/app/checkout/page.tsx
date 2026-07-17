@@ -29,19 +29,22 @@ export default function CheckoutPage() {
     const plz = parseInt(form.postCode.replace(/[^0-9]/g, ''), 10);
     if (isNaN(plz) || plz < KOELN_PLZ.min || plz > KOELN_PLZ.max) { setError(o.postCodeError); return; }
     setError('');
-    // RLM keeps Farsi lines right-to-left even when they end with Latin digits
-    const rtl = lang === 'fa' ? '‏' : '';
+    const fa = lang === 'fa';
+    // RLM keeps Farsi lines right-to-left even when they contain Latin text
+    const rtl = fa ? '‏' : '';
+    const cur = fa ? 'یورو' : 'EUR';
+    const times = fa ? '×' : 'x';
     const SEP = '----------------------------';
     const lines = cart.map((i, n) =>
-      `${rtl}${n + 1}. ${lang === 'fa' ? i.fa : i.de}  (x${i.qty})  =  ${(i.price * i.qty).toFixed(2)} EUR`);
-    const msg = [
+      `${rtl}${n + 1}. ${fa ? i.fa : i.de}  (${times}${i.qty})  =  ${(i.price * i.qty).toFixed(2)} ${cur}`);
+    let msg = [
       `${rtl}*${o.msgTitle}*`,
       SEP,
       '',
       `${rtl}*${o.msgProducts}:*`,
       ...lines,
       '',
-      `${rtl}*${o.msgTotal}: ${sub.toFixed(2)} EUR*`,
+      `${rtl}*${o.msgTotal}: ${sub.toFixed(2)} ${cur}*`,
       '',
       SEP,
       `${rtl}${o.msgName}: ${form.firstName.trim()}`,
@@ -50,9 +53,9 @@ export default function CheckoutPage() {
       `${rtl}${o.msgPostCode}: ${form.postCode.trim()}`,
       `${rtl}${o.msgPhone}: ${form.phone.trim()}`,
       SEP,
-      '',
-      `${rtl}_${o.msgFooter}_`,
     ].join('\n');
+    // Farsi message uses Persian digits everywhere
+    if (fa) msg = msg.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[+d]);
     const url = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
     setWaUrl(url);
     // open synchronously within the click gesture so browsers allow the popup
