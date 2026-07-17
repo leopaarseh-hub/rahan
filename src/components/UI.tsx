@@ -1,6 +1,5 @@
 'use client';
-import { BADGE_STYLE } from '@/lib/data';
-import { CrownIcon } from './Icons';
+import { BADGE_STYLE, withBase } from '@/lib/data';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRouter } from 'next/navigation';
 
@@ -79,9 +78,9 @@ export function Logo({ onClick }: { onClick?: () => void }) {
   };
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none' }}>
-      <div style={{ width: 38, height: 38, background: 'linear-gradient(135deg, var(--olive) 0%, var(--olive-l) 100%)', border: '1px solid rgba(212,175,55,.45)', borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 3px 10px rgba(34,69,58,.22)' }}>
-        <CrownIcon size={20} stroke="var(--gold-l)" />
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+        style={{ width: 42, height: 42, borderRadius: '50%', boxShadow: '0 0 0 1.5px rgba(212,175,55,.55), 0 3px 10px rgba(0,0,0,.25)' }} />
       <div>
         <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: 'var(--olive)', lineHeight: 1.1, letterSpacing: '.02em' }}>Kian Markt</div>
         <div className="fa-font" style={{ fontSize: 11, color: 'var(--gold)', lineHeight: 1 }}>کیان مارکت</div>

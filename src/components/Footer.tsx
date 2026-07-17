@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { T } from '@/lib/translations';
 import { MAPS_URL } from '@/lib/data';
-import { CrownIcon, PhoneIcon, MapPinIcon, ExternalLinkIcon } from './Icons';
+import { PhoneIcon, MapPinIcon, ExternalLinkIcon } from './Icons';
+import { withBase } from '@/lib/data';
 
 export default function Footer() {
   const { lang } = useLanguage();
@@ -30,9 +31,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
-              <div style={{ width: 38, height: 38, background: 'linear-gradient(135deg, rgba(184,137,46,.3), rgba(212,175,55,.16))', border: '1px solid rgba(212,175,55,.35)', borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <CrownIcon size={20} stroke="var(--gold-l)" />
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+                style={{ width: 42, height: 42, borderRadius: '50%', boxShadow: '0 0 0 1.5px rgba(212,175,55,.4)' }} />
               <div>
                 <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>Kian Markt</div>
                 <div className="fa-font" style={{ fontSize: 11, color: 'rgba(212,175,55,.55)' }}>کیان مارکت</div>
