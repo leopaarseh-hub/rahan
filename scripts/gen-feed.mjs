@@ -76,6 +76,27 @@ const csv = [COLUMNS.join(','), ...rows.map(r => COLUMNS.map(k => esc(r[k])).joi
 // BOM so Excel opens Persian and German characters correctly
 fs.writeFileSync('public/catalog.csv', '﻿' + csv + '\n', 'utf8');
 
+// ── prices.csv — the sheet the owner fills in ─────────────────────────
+// Only the `price` column is meant to be edited; `npm run prices -- <file>`
+// reads it back and writes the values into src/lib/data.ts.
+const PRICE_COLUMNS = ['id', 'price', 'product_de', 'product_fa', 'category'];
+const priceRows = sorted.map(p => {
+  const c = catOf(p.catId);
+  return {
+    id: `kian-${p.id}`,
+    price: p.price != null ? p.price.toFixed(2) : '',
+    product_de: p.de,
+    product_fa: p.fa,
+    category: `${c.de} / ${c.fa}`,
+  };
+});
+const priceCsv = [
+  PRICE_COLUMNS.join(','),
+  ...priceRows.map(r => PRICE_COLUMNS.map(k => esc(r[k])).join(',')),
+].join('\n');
+fs.writeFileSync('public/prices.csv', '﻿' + priceCsv + '\n', 'utf8');
+
 const missing = rows.filter(r => !r.price).length;
 console.log(`catalog.csv: ${rows.length} products (${rows.length - missing} priced, ${missing} awaiting price)`);
+console.log(`prices.csv:  ${rows.length} rows to fill → ${SITE}/prices.csv`);
 console.log(`catalog-images: ${rows.length} JPEGs → ${SITE}/catalog.csv`);

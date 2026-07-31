@@ -1,0 +1,275 @@
+﻿id,price,product_de,product_fa,category
+kian-1,,Coca-Cola,کوکاکولا,Erfrischungsgetränke / نوشابه
+kian-2,,Pepsi,پپسی,Erfrischungsgetränke / نوشابه
+kian-3,,Fanta,فانتا,Erfrischungsgetränke / نوشابه
+kian-4,,Sprite,اسپرایت,Erfrischungsgetränke / نوشابه
+kian-5,,7Up,سون‌آپ,Erfrischungsgetränke / نوشابه
+kian-6,,Red Bull,ردبول,Erfrischungsgetränke / نوشابه
+kian-7,,Monster Energy,مانستر,Erfrischungsgetränke / نوشابه
+kian-8,,Zuckerfreie Erfrischungsgetränke,نوشابه بدون شکر,Erfrischungsgetränke / نوشابه
+kian-9,,Mineralwasser mit Kohlensäure,آب معدنی گازدار,Mineralwasser / آب معدنی
+kian-10,,Mineralwasser ohne Kohlensäure,آب معدنی بدون گاز,Mineralwasser / آب معدنی
+kian-11,,Aromatisiertes Wasser,آب طعم‌دار,Mineralwasser / آب معدنی
+kian-12,,Sunich Fruchtsaft,آبمیوه سن‌ایچ,Säfte / آبمیوه
+kian-13,,Takdaneh Fruchtsaft,آبمیوه تکدانه,Säfte / آبمیوه
+kian-14,,Rani Fruchtsaft,رانی,Säfte / آبمیوه
+kian-15,,Fruchtiges Malzgetränk,دلستر میوه‌ای,Säfte / آبمیوه
+kian-16,,Orangensaft,آب پرتقال,Säfte / آبمیوه
+kian-17,,Mangosaft,آب انبه,Säfte / آبمیوه
+kian-18,,Ananassaft,آب آناناس,Säfte / آبمیوه
+kian-19,,Pfirsichsaft,آب هلو,Säfte / آبمیوه
+kian-20,,Sauerkirschsaft,آب آلبالو,Säfte / آبمیوه
+kian-21,,Granatapfelsaft,آب انار,Säfte / آبمیوه
+kian-22,,Malzgetränk Zitrone,دلستر لیمویی,Malzgetränke / دلستر
+kian-23,,Malzgetränk Pfirsich,دلستر هلو,Malzgetränke / دلستر
+kian-24,,Malzgetränk Tropical,دلستر استوایی,Malzgetränke / دلستر
+kian-25,,Malzgetränk Klassisch,دلستر کلاسیک,Malzgetränke / دلستر
+kian-26,,Malzgetränk Ananas,دلستر آناناس,Malzgetränke / دلستر
+kian-27,,Rosenwasser,گلاب,Kräuterdestillate / عرقیات
+kian-28,,Minzdestillat,عرق نعناع,Kräuterdestillate / عرقیات
+kian-29,,Moschusweiden-Destillat,عرق بیدمشک,Kräuterdestillate / عرقیات
+kian-30,,Zichorien-Destillat,عرق کاسنی,Kräuterdestillate / عرقیات
+kian-31,,Orangenblütenwasser,عرق بهارنارنج,Kräuterdestillate / عرقیات
+kian-32,,Erdrauch-Destillat,عرق شاتره,Kräuterdestillate / عرقیات
+kian-33,,Khakshir-Samen,خاکشیر,Kräuterdestillate / عرقیات
+kian-34,,Basilikumsamen,تخم شربتی,Kräuterdestillate / عرقیات
+kian-35,,Ahmad Tea,چای احمد,Tee & Kräutertee / چای و دمنوش
+kian-36,,Do Ghazal Tee,چای دوغزال,Tee & Kräutertee / چای و دمنوش
+kian-37,,Golestan Tee,چای گلستان,Tee & Kräutertee / چای و دمنوش
+kian-38,,Mahmood Tee,چای محمود,Tee & Kräutertee / چای و دمنوش
+kian-39,6.99,Schwarzer Tee,چای سیاه,Tee & Kräutertee / چای و دمنوش
+kian-40,,Grüner Tee,چای سبز,Tee & Kräutertee / چای و دمنوش
+kian-41,,Kamillentee,دمنوش بابونه,Tee & Kräutertee / چای و دمنوش
+kian-42,,Borretschblüten-Tee,گل گاوزبان,Tee & Kräutertee / چای و دمنوش
+kian-43,,Hibiskustee,چای ترش,Tee & Kräutertee / چای و دمنوش
+kian-44,,Hashemi-Reis,برنج هاشمی,Reis / برنج
+kian-45,8.49,Tarom-Reis,برنج طارم,Reis / برنج
+kian-46,,Sadri-Reis,برنج صدری,Reis / برنج
+kian-47,,Domsiah-Reis,برنج دم‌سیاه,Reis / برنج
+kian-48,,Shirudi-Reis,برنج شیرودی,Reis / برنج
+kian-49,,Fajr-Reis,برنج فجر,Reis / برنج
+kian-50,,Indischer Basmati-Reis,برنج باسماتی هند,Reis / برنج
+kian-51,,Pakistanischer Reis,برنج پاکستانی,Reis / برنج
+kian-52,,Türkischer Reis,برنج ترکی,Reis / برنج
+kian-254,,Shahan Darbari Basmati-Reis,برنج شاهان درباری,Reis / برنج
+kian-53,,Pintobohnen,لوبیا چیتی,Hülsenfrüchte / حبوبات
+kian-54,,Rote Bohnen,لوبیا قرمز,Hülsenfrüchte / حبوبات
+kian-55,,Weiße Bohnen,لوبیا سفید,Hülsenfrüchte / حبوبات
+kian-56,,Augenbohnen,لوبیا چشم‌بلبلی,Hülsenfrüchte / حبوبات
+kian-57,,Linsen,عدس,Hülsenfrüchte / حبوبات
+kian-58,,Gelbe Spalterbsen,لپه,Hülsenfrüchte / حبوبات
+kian-59,,Kichererbsen,نخود,Hülsenfrüchte / حبوبات
+kian-60,,Mungbohnen,ماش,Hülsenfrüchte / حبوبات
+kian-61,,Sojabohnen,سویا,Hülsenfrüchte / حبوبات
+kian-62,,Kurkuma,زردچوبه,Gewürze / ادویه‌جات
+kian-63,,Schwarzer Pfeffer,فلفل سیاه,Gewürze / ادویه‌جات
+kian-64,,Chilipulver,فلفل قرمز,Gewürze / ادویه‌جات
+kian-65,,Zimt,دارچین,Gewürze / ادویه‌جات
+kian-66,,Kardamom,هل,Gewürze / ادویه‌جات
+kian-67,,Ingwer,زنجبیل,Gewürze / ادویه‌جات
+kian-68,,Kreuzkümmel,زیره,Gewürze / ادویه‌جات
+kian-69,,Sumach,سماق,Gewürze / ادویه‌جات
+kian-70,,Golpar (Persischer Bärenklau),گلپر,Gewürze / ادویه‌جات
+kian-71,,Safran,زعفران,Gewürze / ادویه‌جات
+kian-72,,Thymian,آویشن,Gewürze / ادویه‌جات
+kian-73,,Curry,کاری,Gewürze / ادویه‌جات
+kian-74,,Knoblauchpulver,پودر سیر,Gewürze / ادویه‌جات
+kian-75,,Zwiebelpulver,پودر پیاز,Gewürze / ادویه‌جات
+kian-76,,Tomatenmark,رب گوجه‌فرنگی,Mark & Saucen / رب و چاشنی
+kian-77,,Granatapfelmark,رب انار,Mark & Saucen / رب و چاشنی
+kian-78,,Paprikamark,رب فلفل,Mark & Saucen / رب و چاشنی
+kian-79,,Verjus,آبغوره,Mark & Saucen / رب و چاشنی
+kian-80,,Zitronensaft,آبلیمو,Mark & Saucen / رب و چاشنی
+kian-81,,Essig,سرکه,Mark & Saucen / رب و چاشنی
+kian-82,,Mayonnaise,سس مایونز,Mark & Saucen / رب و چاشنی
+kian-83,,Ketchup,کچاپ,Mark & Saucen / رب و چاشنی
+kian-84,,Senf,خردل,Mark & Saucen / رب و چاشنی
+kian-85,,Scharfe Sauce,سس تند,Mark & Saucen / رب و چاشنی
+kian-86,,Knoblauchsauce,سس سیر,Mark & Saucen / رب و چاشنی
+kian-87,,Salzgurken,خیارشور,Eingelegtes & Oliven / ترشیجات
+kian-88,,Oliven,زیتون,Eingelegtes & Oliven / ترشیجات
+kian-89,,Gemischtes Eingelegtes,ترشی مخلوط,Eingelegtes & Oliven / ترشیجات
+kian-90,,Torshi Liteh,ترشی لیته,Eingelegtes & Oliven / ترشیجات
+kian-91,,Eingelegter Knoblauch,سیر ترشی,Eingelegtes & Oliven / ترشیجات
+kian-92,,Salzgemüse,شور,Eingelegtes & Oliven / ترشیجات
+kian-93,,Nudeln,ماکارونی,Trockenwaren / مواد غذایی خشک
+kian-94,,Ash-Nudeln,رشته آشی,Trockenwaren / مواد غذایی خشک
+kian-95,,Reshteh Polowi,رشته پلویی,Trockenwaren / مواد غذایی خشک
+kian-96,,Fadennudeln,ورمیشل,Trockenwaren / مواد غذایی خشک
+kian-97,,Weizenmehl,آرد سفید,Trockenwaren / مواد غذایی خشک
+kian-98,,Kichererbsenmehl,آرد نخودچی,Trockenwaren / مواد غذایی خشک
+kian-99,,Reismehl,آرد برنج,Trockenwaren / مواد غذایی خشک
+kian-100,,Speisestärke,نشاسته,Trockenwaren / مواد غذایی خشک
+kian-101,,Hartweizengrieß,آرد سمولینا,Trockenwaren / مواد غذایی خشک
+kian-102,3.49,Joghurt,ماست,Milchprodukte / لبنیات
+kian-103,,Doogh (Joghurtgetränk),دوغ,Milchprodukte / لبنیات
+kian-104,4.99,Iranischer Käse,پنیر ایرانی,Milchprodukte / لبنیات
+kian-105,,Lighvan-Käse,پنیر لیقوان,Milchprodukte / لبنیات
+kian-106,,Sahne,خامه,Milchprodukte / لبنیات
+kian-107,,Milch,شیر,Milchprodukte / لبنیات
+kian-108,,Butter,کره,Milchprodukte / لبنیات
+kian-109,,Kashk,کشک,Milchprodukte / لبنیات
+kian-110,,Pizzakäse,پنیر پیتزا,Milchprodukte / لبنیات
+kian-111,3.29,Eier,تخم‌مرغ,Milchprodukte / لبنیات
+kian-112,,Pflanzenöl,روغن مایع,Speiseöle / روغن
+kian-113,,Frittieröl,روغن سرخ‌کردنی,Speiseöle / روغن
+kian-114,,Olivenöl,روغن زیتون,Speiseöle / روغن
+kian-115,,Sesamöl,روغن کنجد,Speiseöle / روغن
+kian-116,,Butterschmalz,روغن حیوانی,Speiseöle / روغن
+kian-255,,Alssad Pflanzen-Ghee 1 L,روغن نباتی السعد ۱ لیتر,Speiseöle / روغن
+kian-256,,Alssad Pflanzen-Ghee 2 L,روغن نباتی السعد ۲ لیتر,Speiseöle / روغن
+kian-258,,Khanum Pure Ghee 500 g,روغن حیوانی خانم ۵۰۰ گرم,Speiseöle / روغن
+kian-117,,Lammfleisch,گوشت گوسفند,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-118,,Rindfleisch,گوشت گوساله,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-119,,Hähnchen,مرغ,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-120,,Jujeh Kabab,جوجه کباب,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-121,,Koobideh Kabab,کباب لقمه,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-122,,Halal Würstchen,سوسیس حلال,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-123,,Halal Aufschnitt,کالباس حلال,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-124,,Hamburger,همبرگر,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-125,,Hähnchenfilet,فیله مرغ,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-126,,Fisch,ماهی,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-127,,Garnelen,میگو,Halal Fleisch & Protein / گوشت و پروتئین حلال
+kian-128,,Ghormeh-Kräuter,سبزی قورمه,Fertiggerichte / غذاهای آماده
+kian-129,,Ash-Kräuter,سبزی آش,Fertiggerichte / غذاهای آماده
+kian-130,,Kuku-Kräuter,سبزی کوکو,Fertiggerichte / غذاهای آماده
+kian-131,,Röstzwiebeln,پیاز داغ,Fertiggerichte / غذاهای آماده
+kian-132,,Gegrillte Auberginen,بادمجان کبابی,Fertiggerichte / غذاهای آماده
+kian-133,,Kashk-e Bademjan,کشک بادمجان,Fertiggerichte / غذاهای آماده
+kian-134,,Samanu,سمنو,Fertiggerichte / غذاهای آماده
+kian-135,,Dolma (Gefüllte Weinblätter),دلمه,Fertiggerichte / غذاهای آماده
+kian-136,,Ghormeh Sabzi Eintopf,خورش قورمه‌سبزی,Fertiggerichte / غذاهای آماده
+kian-137,,Gheimeh Eintopf,خورش قیمه,Fertiggerichte / غذاهای آماده
+kian-138,,Fesenjan,فسنجان,Fertiggerichte / غذاهای آماده
+kian-139,,Iranische Konserven,کنسرو ایرانی,Fertiggerichte / غذاهای آماده
+kian-257,,Amu Food Gebratene Kräuter,سبزی سرخ‌شده آمو فود,Fertiggerichte / غذاهای آماده
+kian-140,,Saghe Talaei Kekse,ساقه طلایی,Kekse & Gebäck / بیسکویت و شیرینی
+kian-141,,Madar Kekse,بیسکویت مادر,Kekse & Gebäck / بیسکویت و شیرینی
+kian-142,,Petit Beurre,پتی‌بور,Kekse & Gebäck / بیسکویت و شیرینی
+kian-143,,Cremekekse,بیسکویت کرم‌دار,Kekse & Gebäck / بیسکویت و شیرینی
+kian-144,,Waffeln,ویفر,Kekse & Gebäck / بیسکویت و شیرینی
+kian-145,,Yazdi-Kuchen,کیک یزدی,Kekse & Gebäck / بیسکویت و شیرینی
+kian-146,,Kolucheh,کلوچه,Kekse & Gebäck / بیسکویت و شیرینی
+kian-147,,Ghotab,قطاب,Kekse & Gebäck / بیسکویت و شیرینی
+kian-253,,Farkhondeh Kekse (Sesam & Dill),بیسکویت فرخنده کنجد و شوید,Kekse & Gebäck / بیسکویت و شیرینی
+kian-261,,Naderi Kekse mit Walnussfüllung,کلوچه نادری با مغز گردو,Kekse & Gebäck / بیسکویت و شیرینی
+kian-263,,Cremekekse mit Orangengeschmack,بیسکویت کرم‌دار پرتقالی,Kekse & Gebäck / بیسکویت و شیرینی
+kian-264,,Farkhondeh Kekse mit Bananengeschmack,بیسکویت فرخنده با طعم موز,Kekse & Gebäck / بیسکویت و شیرینی
+kian-148,,KitKat,کیت‌کت,Schokolade / شکلات
+kian-149,,Mars,مارس,Schokolade / شکلات
+kian-150,,Snickers,اسنیکرز,Schokolade / شکلات
+kian-151,,Milka,میلکا,Schokolade / شکلات
+kian-152,,Toblerone,تابلرون,Schokolade / شکلات
+kian-153,,Iranische Schokolade,شکلات ایرانی,Schokolade / شکلات
+kian-252,,Minoo Rangarang Toffee,شکلات رنگارنگ مینو,Schokolade / شکلات
+kian-260,4.50,Konfekt-Schokolade 500 g,شکلات کنفت ۵۰۰ گرم,Schokolade / شکلات
+kian-154,,Pofak (Käsesnack),پفک,Snacks & Nüsse / تنقلات و آجیل
+kian-155,,Chips,چیپس,Snacks & Nüsse / تنقلات و آجیل
+kian-156,,Kerne,تخمه,Snacks & Nüsse / تنقلات و آجیل
+kian-157,,Mandeln,بادام,Snacks & Nüsse / تنقلات و آجیل
+kian-158,,Pistazien,پسته,Snacks & Nüsse / تنقلات و آجیل
+kian-159,,Walnüsse,گردو,Snacks & Nüsse / تنقلات و آجیل
+kian-160,,Haselnüsse,فندق,Snacks & Nüsse / تنقلات و آجیل
+kian-161,,Rosinen,کشمش,Snacks & Nüsse / تنقلات و آجیل
+kian-162,,Getrocknete Feigen,انجیر خشک,Snacks & Nüsse / تنقلات و آجیل
+kian-163,,Getrocknete Aprikosen,برگه زردآلو,Snacks & Nüsse / تنقلات و آجیل
+kian-164,,Lavashak (Fruchtleder),لواشک,Snacks & Nüsse / تنقلات و آجیل
+kian-165,,Aloocheh,آلوچه,Snacks & Nüsse / تنقلات و آجیل
+kian-250,,Große Jujube (Annab),عناب درشت,Snacks & Nüsse / تنقلات و آجیل
+kian-251,,Getrocknete Jujube (Annab),عناب خشک,Snacks & Nüsse / تنقلات و آجیل
+kian-265,14.99,Gheisi Trockenaprikosen 700 g,قیسی واحدی ۷۰۰ گرم,Snacks & Nüsse / تنقلات و آجیل
+kian-266,9.99,Vanillierte Aprikosenkerne 500 g,مغز زردآلوی وانیلی ۵۰۰ گرم,Snacks & Nüsse / تنقلات و آجیل
+kian-166,,Gaz (Persischer Nougat),گز,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-167,,Sohan,سوهان,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-168,,Poolaki,پولکی,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-169,,Kandiszucker,نبات,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-170,,Noghl,نقل,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-171,,Baklava,باقلوا,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-172,,Traditioneller Ghotab,قطاب سنتی,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-173,,Masghati,مسقطی,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-174,,Basloogh,باسلوق,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-175,,Lokum,راحت‌الحلقوم,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-259,7.50,Shahia Ghorayeba (Vanille & Mandeln),غریبه شهیه با وانیل و بادام,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-262,8.50,Khodkar Sohan Takht,سوهان تخت خودکار,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-267,5.99,Hajabdolo Saffran-Pashmak,پشمک زعفرانی حاج عبدالله,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-268,6.99,Hajabdolo Saffran-Pashmak Häppchen (17 Stück),پشمک لقمه‌ای زعفرانی حاج عبدالله (۱۷ عددی),Traditionelle Süßigkeiten / شیرینی سنتی
+kian-269,9.99,Kermani Gaz Geschenkbox (orange),گز کرمانی جعبه نارنجی,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-270,10.99,Kermani Gaz Geschenkbox (Termeh türkis),گز کرمانی جعبه ترمه فیروزه‌ای,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-271,10.99,Kermani Gaz Geschenkbox (Esfahan),گز کرمانی جعبه اصفهان,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-272,11.99,Kermani Gaz Geschenkbox (gold),گز کرمانی جعبه طلایی,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-273,12.99,Shervin Gaz,گز شروین,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-274,8.99,Viuna Gaz,گز ویونا,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-176,,Lavash-Brot,نان لواش,Brot / نان
+kian-177,,Sangak-Brot,نان سنگک,Brot / نان
+kian-178,,Barbari-Brot,نان بربری,Brot / نان
+kian-179,,Taftoon-Brot,نان تافتون,Brot / نان
+kian-180,,Pitabrot,نان پیتا,Brot / نان
+kian-181,2.99,Toastbrot,نان تست,Brot / نان
+kian-182,,Tortilla,تورتیلا,Brot / نان
+kian-183,,Frische Kräutermischung,سبزی خوردن,Frisches Gemüse / سبزیجات تازه
+kian-184,,Petersilie,جعفری,Frisches Gemüse / سبزیجات تازه
+kian-185,,Koriander,گشنیز,Frisches Gemüse / سبزیجات تازه
+kian-186,,Dill,شوید,Frisches Gemüse / سبزیجات تازه
+kian-187,,Minze,نعناع,Frisches Gemüse / سبزیجات تازه
+kian-188,,Lauch,تره,Frisches Gemüse / سبزیجات تازه
+kian-189,,Basilikum,ریحان,Frisches Gemüse / سبزیجات تازه
+kian-190,,Spinat,اسفناج,Frisches Gemüse / سبزیجات تازه
+kian-191,,Auberginen,بادمجان,Frisches Gemüse / سبزیجات تازه
+kian-192,2.49,Tomaten,گوجه‌فرنگی,Frisches Gemüse / سبزیجات تازه
+kian-193,1.99,Gurken,خیار,Frisches Gemüse / سبزیجات تازه
+kian-194,,Paprika,فلفل,Frisches Gemüse / سبزیجات تازه
+kian-195,,Zitronen,لیمو,Frisches Gemüse / سبزیجات تازه
+kian-196,,Granatapfel,انار,Frisches Obst / میوه
+kian-197,,Kaki,خرمالو,Frisches Obst / میوه
+kian-198,,Datteln,خرما,Frisches Obst / میوه
+kian-199,2.79,Äpfel,سیب,Frisches Obst / میوه
+kian-200,2.49,Orangen,پرتقال,Frisches Obst / میوه
+kian-201,,Bananen,موز,Frisches Obst / میوه
+kian-202,,Wassermelone,هندوانه,Frisches Obst / میوه
+kian-203,,Zuckermelone,طالبی,Frisches Obst / میوه
+kian-204,3.99,Trauben,انگور,Frisches Obst / میوه
+kian-205,,Kiwi,کیوی,Frisches Obst / میوه
+kian-206,,Spülmittel,مایع ظرفشویی,Reinigung & Hygiene / شوینده و بهداشتی
+kian-207,,Flüssigwaschmittel,مایع لباسشویی,Reinigung & Hygiene / شوینده و بهداشتی
+kian-208,,Waschpulver,پودر لباسشویی,Reinigung & Hygiene / شوینده و بهداشتی
+kian-209,,Bleichmittel,سفیدکننده,Reinigung & Hygiene / شوینده و بهداشتی
+kian-210,,Papiertaschentücher,دستمال کاغذی,Reinigung & Hygiene / شوینده و بهداشتی
+kian-211,,Toilettenpapier,دستمال توالت,Reinigung & Hygiene / شوینده و بهداشتی
+kian-212,,Müllbeutel,کیسه زباله,Reinigung & Hygiene / شوینده و بهداشتی
+kian-213,,Shampoo,شامپو,Reinigung & Hygiene / شوینده و بهداشتی
+kian-214,,Seife,صابون,Reinigung & Hygiene / شوینده و بهداشتی
+kian-215,,Zahnpasta,خمیردندان,Reinigung & Hygiene / شوینده و بهداشتی
+kian-216,,Zahnbürste,مسواک,Reinigung & Hygiene / شوینده و بهداشتی
+kian-217,,Einwegbecher,لیوان یکبار مصرف,Einweggeschirr / لوازم یکبار مصرف
+kian-218,,Einwegteller,بشقاب یکبار مصرف,Einweggeschirr / لوازم یکبار مصرف
+kian-219,,Einweglöffel,قاشق یکبار مصرف,Einweggeschirr / لوازم یکبار مصرف
+kian-220,,Einweggabeln,چنگال یکبار مصرف,Einweggeschirr / لوازم یکبار مصرف
+kian-221,,Einwegmesser,کارد یکبار مصرف,Einweggeschirr / لوازم یکبار مصرف
+kian-222,,Einweg-Tischdecke,سفره یکبار مصرف,Einweggeschirr / لوازم یکبار مصرف
+kian-223,,Alufolie,فویل آلومینیوم,Einweggeschirr / لوازم یکبار مصرف
+kian-224,,Frischhaltefolie,سلفون,Einweggeschirr / لوازم یکبار مصرف
+kian-225,,Gefrierbeutel,کیسه فریزر,Einweggeschirr / لوازم یکبار مصرف
+kian-226,,Norooz-Sabzeh,سبزه نوروز,Saisonale Produkte / محصولات مناسبتی
+kian-227,,Senjed,سنجد,Saisonale Produkte / محصولات مناسبتی
+kian-228,,Norooz-Samanu,سمنو نوروزی,Saisonale Produkte / محصولات مناسبتی
+kian-229,,Yalda-Nussmischung,آجیل شب یلدا,Saisonale Produkte / محصولات مناسبتی
+kian-230,,Festtags-Datteln,خرمای مناسبتی,Saisonale Produkte / محصولات مناسبتی
+kian-231,,Zoolbia & Bamieh,زولبیا و بامیه,Saisonale Produkte / محصولات مناسبتی
+kian-232,,Festgebäck,شیرینی عید,Saisonale Produkte / محصولات مناسبتی
+kian-233,,Kerzen,شمع,Saisonale Produkte / محصولات مناسبتی
+kian-234,,Haft-Sin Tischdecke,سفره هفت‌سین,Saisonale Produkte / محصولات مناسبتی
+kian-235,,Kaffee,قهوه,Sonstiges / سایر اقلام
+kian-236,,Nescafé,نسکافه,Sonstiges / سایر اقلام
+kian-237,,Cappuccino,کاپوچینو,Sonstiges / سایر اقلام
+kian-238,,Würfelzucker,قند,Sonstiges / سایر اقلام
+kian-239,,Zucker,شکر,Sonstiges / سایر اقلام
+kian-240,,Kandiszucker-Sticks,نبات چوبی,Sonstiges / سایر اقلام
+kian-241,7.99,Honig,عسل,Sonstiges / سایر اقلام
+kian-242,,Marmelade,مربا,Sonstiges / سایر اقلام
+kian-243,,Sesammus (Tahini),ارده,Sonstiges / سایر اقلام
+kian-244,,Halva,حلوا ارده,Sonstiges / سایر اقلام
+kian-245,,Erdnussbutter,کره بادام‌زمینی,Sonstiges / سایر اقلام
+kian-246,,Thunfisch-Konserve,کنسرو تن ماهی,Sonstiges / سایر اقلام
+kian-247,,Bohnen-Konserve,کنسرو لوبیا,Sonstiges / سایر اقلام
+kian-248,,Mais-Konserve,کنسرو ذرت,Sonstiges / سایر اقلام
+kian-249,,Erbsen-Konserve,کنسرو نخودفرنگی,Sonstiges / سایر اقلام

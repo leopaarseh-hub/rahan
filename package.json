@@ -9,7 +9,8 @@
     "lint": "next lint",
     "prebuild": "node scripts/to-webp.mjs && node scripts/gen-feed.mjs",
     "feed": "node scripts/gen-feed.mjs",
-    "webp": "node scripts/to-webp.mjs"
+    "webp": "node scripts/to-webp.mjs",
+    "prices": "node scripts/apply-prices.mjs"
   },
   "dependencies": {
     "next": "14.2.3",
