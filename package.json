@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prebuild": "node scripts/gen-feed.mjs",
-    "feed": "node scripts/gen-feed.mjs"
+    "prebuild": "node scripts/to-webp.mjs && node scripts/gen-feed.mjs",
+    "feed": "node scripts/gen-feed.mjs",
+    "webp": "node scripts/to-webp.mjs"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -16,14 +17,15 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }

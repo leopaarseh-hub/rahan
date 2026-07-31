@@ -33,7 +33,7 @@ export default function Footer() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+              <img src={withBase('/images/logo.webp')} alt="Kian Markt Logo"
                 style={{ width: 42, height: 42, borderRadius: '50%', boxShadow: '0 0 0 1.5px rgba(212,175,55,.4)' }} />
               <div>
                 <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>Kian Markt</div>

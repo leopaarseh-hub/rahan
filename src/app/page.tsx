@@ -58,10 +58,10 @@ export default function HomePage() {
                 <div style={{ position:'absolute', width:'104%', height:'104%', borderRadius:'50%', background:'radial-gradient(circle, rgba(212,175,55,.22) 0%, transparent 72%)', pointerEvents:'none' }} />
                 <div className="hero-photo-frame">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={withBase('/images/storefront.jpg')} alt="Kian Supermarkt — Luxemburger Str. 12, Köln" className="hero-photo" />
+                  <img src={withBase('/images/storefront.webp')} alt="Kian Supermarkt — Luxemburger Str. 12, Köln" className="hero-photo" />
                   <div className="hero-photo-caption">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+                    <img src={withBase('/images/logo.webp')} alt="Kian Markt Logo"
                       style={{ width: 40, height: 40, borderRadius: '50%', flexShrink: 0, boxShadow: '0 0 0 1.5px rgba(212,175,55,.5)' }} />
                     <div>
                       <div className="fa-font" style={{ fontSize:16, fontWeight:600, color:'#fff', lineHeight:1.3 }}>سوپر مارکت کیان</div>

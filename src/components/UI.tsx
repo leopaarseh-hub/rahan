@@ -79,7 +79,7 @@ export function Logo({ onClick }: { onClick?: () => void }) {
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none' }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={withBase('/images/logo.png')} alt="Kian Markt Logo"
+      <img src={withBase('/images/logo.webp')} alt="Kian Markt Logo"
         style={{ width: 42, height: 42, borderRadius: '50%', boxShadow: '0 0 0 1.5px rgba(212,175,55,.55), 0 3px 10px rgba(0,0,0,.25)' }} />
       <div>
         <div className="d-font" style={{ fontSize: 17, fontWeight: 700, color: 'var(--olive)', lineHeight: 1.1, letterSpacing: '.02em' }}>Kian Markt</div>

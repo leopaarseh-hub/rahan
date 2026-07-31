@@ -42,7 +42,7 @@ const rows = [...PRODUCTS]
       condition: 'new',
       price: p.price != null ? `${p.price.toFixed(2)} EUR` : '',
       link: `${SITE}/shop`,
-      image_link: `${SITE}${p.img || '/images/logo.png'}`,
+      image_link: `${SITE}${p.img || '/images/logo.webp'}`,
       brand: BRAND,
       product_type: `${c.de} > ${c.fa}`,
     };
