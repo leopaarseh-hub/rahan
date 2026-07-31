@@ -25,9 +25,11 @@ bilingual Farsi (default, RTL) + German, deployed on Vercel.
 - `price` is optional — items without one render as "قیمت در واتساپ" / "Preis auf
   Anfrage" and are handled that way in the cart, checkout and WhatsApp message.
 - Products are interleaved across categories so listings open with a varied mix.
-- `public/catalog.csv` (Meta / WhatsApp Business feed) and the JPEGs in
-  `public/catalog-images/` are generated from this data by `scripts/gen-feed.mjs` on
-  every build — never edit them by hand.
+- `public/catalog.csv` (Meta / WhatsApp Business feed), `public/prices.csv` (the
+  owner's price sheet) and the JPEGs in `public/catalog-images/` are generated from
+  this data by `scripts/gen-feed.mjs` on every build — never edit them by hand.
+- To load prices the owner filled in: `npm run prices -- <file.csv>` writes them into
+  `data.ts` (accepts `8.49`, `8,49`, `8.49 EUR`, `€8.49`; blank leaves it unpriced).
 - The live site is https://kian-market.vercel.app; override with `NEXT_PUBLIC_SITE_URL`
   if the domain changes, since the feed needs absolute URLs.
 
