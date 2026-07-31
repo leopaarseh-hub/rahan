@@ -51,7 +51,7 @@ kian-49,,Fajr-Reis,برنج فجر,Reis / برنج
 kian-50,,Indischer Basmati-Reis,برنج باسماتی هند,Reis / برنج
 kian-51,,Pakistanischer Reis,برنج پاکستانی,Reis / برنج
 kian-52,,Türkischer Reis,برنج ترکی,Reis / برنج
-kian-254,,Shahan Darbari Basmati-Reis,برنج شاهان درباری,Reis / برنج
+kian-254,17.00,Shahan Darbari Basmati-Reis,برنج شاهان درباری,Reis / برنج
 kian-53,,Pintobohnen,لوبیا چیتی,Hülsenfrüchte / حبوبات
 kian-54,,Rote Bohnen,لوبیا قرمز,Hülsenfrüchte / حبوبات
 kian-55,,Weiße Bohnen,لوبیا سفید,Hülsenfrüchte / حبوبات
@@ -116,9 +116,9 @@ kian-113,,Frittieröl,روغن سرخ‌کردنی,Speiseöle / روغن
 kian-114,,Olivenöl,روغن زیتون,Speiseöle / روغن
 kian-115,,Sesamöl,روغن کنجد,Speiseöle / روغن
 kian-116,,Butterschmalz,روغن حیوانی,Speiseöle / روغن
-kian-255,,Alssad Pflanzen-Ghee 1 L,روغن نباتی السعد ۱ لیتر,Speiseöle / روغن
-kian-256,,Alssad Pflanzen-Ghee 2 L,روغن نباتی السعد ۲ لیتر,Speiseöle / روغن
-kian-258,,Khanum Pure Ghee 500 g,روغن حیوانی خانم ۵۰۰ گرم,Speiseöle / روغن
+kian-255,7.00,Alssad Pflanzen-Ghee 1 L,روغن نباتی السعد ۱ لیتر,Speiseöle / روغن
+kian-256,12.50,Alssad Pflanzen-Ghee 2 L,روغن نباتی السعد ۲ لیتر,Speiseöle / روغن
+kian-258,9.50,Khanum Pure Ghee 500 g,روغن حیوانی خانم ۵۰۰ گرم,Speiseöle / روغن
 kian-117,,Lammfleisch,گوشت گوسفند,Halal Fleisch & Protein / گوشت و پروتئین حلال
 kian-118,,Rindfleisch,گوشت گوساله,Halal Fleisch & Protein / گوشت و پروتئین حلال
 kian-119,,Hähnchen,مرغ,Halal Fleisch & Protein / گوشت و پروتئین حلال
@@ -142,8 +142,8 @@ kian-136,,Ghormeh Sabzi Eintopf,خورش قورمه‌سبزی,Fertiggerichte / 
 kian-137,,Gheimeh Eintopf,خورش قیمه,Fertiggerichte / غذاهای آماده
 kian-138,,Fesenjan,فسنجان,Fertiggerichte / غذاهای آماده
 kian-139,,Iranische Konserven,کنسرو ایرانی,Fertiggerichte / غذاهای آماده
-kian-257,,Amu Food Gebratene Kräuter,سبزی سرخ‌شده آمو فود,Fertiggerichte / غذاهای آماده
-kian-140,,Saghe Talaei Kekse,ساقه طلایی,Kekse & Gebäck / بیسکویت و شیرینی
+kian-257,3.50,Amu Food Gebratene Kräuter,سبزی سرخ‌شده آمو فود,Fertiggerichte / غذاهای آماده
+kian-140,1.50,Saghe Talaei Kekse,ساقه طلایی,Kekse & Gebäck / بیسکویت و شیرینی
 kian-141,,Madar Kekse,بیسکویت مادر,Kekse & Gebäck / بیسکویت و شیرینی
 kian-142,,Petit Beurre,پتی‌بور,Kekse & Gebäck / بیسکویت و شیرینی
 kian-143,,Cremekekse,بیسکویت کرم‌دار,Kekse & Gebäck / بیسکویت و شیرینی
@@ -151,17 +151,17 @@ kian-144,,Waffeln,ویفر,Kekse & Gebäck / بیسکویت و شیرینی
 kian-145,,Yazdi-Kuchen,کیک یزدی,Kekse & Gebäck / بیسکویت و شیرینی
 kian-146,,Kolucheh,کلوچه,Kekse & Gebäck / بیسکویت و شیرینی
 kian-147,,Ghotab,قطاب,Kekse & Gebäck / بیسکویت و شیرینی
-kian-253,,Farkhondeh Kekse (Sesam & Dill),بیسکویت فرخنده کنجد و شوید,Kekse & Gebäck / بیسکویت و شیرینی
-kian-261,,Naderi Kekse mit Walnussfüllung,کلوچه نادری با مغز گردو,Kekse & Gebäck / بیسکویت و شیرینی
+kian-253,4.50,Farkhondeh Kekse (Sesam & Dill),بیسکویت فرخنده کنجد و شوید,Kekse & Gebäck / بیسکویت و شیرینی
+kian-261,1.50,Naderi Kekse mit Walnussfüllung,کلوچه نادری با مغز گردو,Kekse & Gebäck / بیسکویت و شیرینی
 kian-263,,Cremekekse mit Orangengeschmack,بیسکویت کرم‌دار پرتقالی,Kekse & Gebäck / بیسکویت و شیرینی
-kian-264,,Farkhondeh Kekse mit Bananengeschmack,بیسکویت فرخنده با طعم موز,Kekse & Gebäck / بیسکویت و شیرینی
+kian-264,4.50,Farkhondeh Kekse mit Bananengeschmack,بیسکویت فرخنده با طعم موز,Kekse & Gebäck / بیسکویت و شیرینی
 kian-148,,KitKat,کیت‌کت,Schokolade / شکلات
 kian-149,,Mars,مارس,Schokolade / شکلات
 kian-150,,Snickers,اسنیکرز,Schokolade / شکلات
 kian-151,,Milka,میلکا,Schokolade / شکلات
 kian-152,,Toblerone,تابلرون,Schokolade / شکلات
 kian-153,,Iranische Schokolade,شکلات ایرانی,Schokolade / شکلات
-kian-252,,Minoo Rangarang Toffee,شکلات رنگارنگ مینو,Schokolade / شکلات
+kian-252,5.00,Minoo Rangarang Toffee,شکلات رنگارنگ مینو,Schokolade / شکلات
 kian-260,4.50,Konfekt-Schokolade 500 g,شکلات کنفت ۵۰۰ گرم,Schokolade / شکلات
 kian-154,,Pofak (Käsesnack),پفک,Snacks & Nüsse / تنقلات و آجیل
 kian-155,,Chips,چیپس,Snacks & Nüsse / تنقلات و آجیل
@@ -177,8 +177,8 @@ kian-164,,Lavashak (Fruchtleder),لواشک,Snacks & Nüsse / تنقلات و آ
 kian-165,,Aloocheh,آلوچه,Snacks & Nüsse / تنقلات و آجیل
 kian-250,,Große Jujube (Annab),عناب درشت,Snacks & Nüsse / تنقلات و آجیل
 kian-251,,Getrocknete Jujube (Annab),عناب خشک,Snacks & Nüsse / تنقلات و آجیل
-kian-265,14.99,Gheisi Trockenaprikosen 700 g,قیسی واحدی ۷۰۰ گرم,Snacks & Nüsse / تنقلات و آجیل
-kian-266,9.99,Vanillierte Aprikosenkerne 500 g,مغز زردآلوی وانیلی ۵۰۰ گرم,Snacks & Nüsse / تنقلات و آجیل
+kian-265,15.00,Gheisi Trockenaprikosen 700 g,قیسی واحدی ۷۰۰ گرم,Snacks & Nüsse / تنقلات و آجیل
+kian-266,10.00,Vanillierte Aprikosenkerne 500 g,مغز زردآلوی وانیلی ۵۰۰ گرم,Snacks & Nüsse / تنقلات و آجیل
 kian-166,,Gaz (Persischer Nougat),گز,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-167,,Sohan,سوهان,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-168,,Poolaki,پولکی,Traditionelle Süßigkeiten / شیرینی سنتی
@@ -191,14 +191,14 @@ kian-174,,Basloogh,باسلوق,Traditionelle Süßigkeiten / شیرینی سن�
 kian-175,,Lokum,راحت‌الحلقوم,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-259,7.50,Shahia Ghorayeba (Vanille & Mandeln),غریبه شهیه با وانیل و بادام,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-262,8.50,Khodkar Sohan Takht,سوهان تخت خودکار,Traditionelle Süßigkeiten / شیرینی سنتی
-kian-267,5.99,Hajabdolo Saffran-Pashmak,پشمک زعفرانی حاج عبدالله,Traditionelle Süßigkeiten / شیرینی سنتی
-kian-268,6.99,Hajabdolo Saffran-Pashmak Häppchen (17 Stück),پشمک لقمه‌ای زعفرانی حاج عبدالله (۱۷ عددی),Traditionelle Süßigkeiten / شیرینی سنتی
+kian-267,6.00,Hajabdolo Saffran-Pashmak,پشمک زعفرانی حاج عبدالله,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-268,7.00,Hajabdolo Saffran-Pashmak Häppchen (17 Stück),پشمک لقمه‌ای زعفرانی حاج عبدالله (۱۷ عددی),Traditionelle Süßigkeiten / شیرینی سنتی
 kian-269,9.99,Kermani Gaz Geschenkbox (orange),گز کرمانی جعبه نارنجی,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-270,10.99,Kermani Gaz Geschenkbox (Termeh türkis),گز کرمانی جعبه ترمه فیروزه‌ای,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-271,10.99,Kermani Gaz Geschenkbox (Esfahan),گز کرمانی جعبه اصفهان,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-272,11.99,Kermani Gaz Geschenkbox (gold),گز کرمانی جعبه طلایی,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-273,12.99,Shervin Gaz,گز شروین,Traditionelle Süßigkeiten / شیرینی سنتی
-kian-274,8.99,Viuna Gaz,گز ویونا,Traditionelle Süßigkeiten / شیرینی سنتی
+kian-274,9.00,Viuna Gaz-Häppchen 25% Pistazie,گز لقمه‌ای ویونا ۲۵٪ مغز پسته,Traditionelle Süßigkeiten / شیرینی سنتی
 kian-176,,Lavash-Brot,نان لواش,Brot / نان
 kian-177,,Sangak-Brot,نان سنگک,Brot / نان
 kian-178,,Barbari-Brot,نان بربری,Brot / نان
