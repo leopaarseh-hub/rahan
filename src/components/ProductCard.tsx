@@ -18,13 +18,15 @@ export default function ProductCard({ product: p }: { product: Product }) {
       <div style={{ height: 175, background: p.imgBg, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
         {p.img ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={withBase(p.img)} alt={lang === 'fa' ? p.fa : p.de} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 10 }} />
+          <img src={withBase(p.img)} alt={lang === 'fa' ? p.fa : p.de} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 10 }} />
         ) : (
           <CrownIcon size={44} stroke="var(--gold)" />
         )}
-        <div style={{ position: 'absolute', top: 12, left: lang === 'fa' ? 'auto' : 12, right: lang === 'fa' ? 12 : 'auto' }}>
-          <Badge label={badge} />
-        </div>
+        {badge && (
+          <div style={{ position: 'absolute', top: 12, left: lang === 'fa' ? 'auto' : 12, right: lang === 'fa' ? 12 : 'auto' }}>
+            <Badge label={badge} />
+          </div>
+        )}
       </div>
       <div style={{ padding: '16px 18px 20px' }}>
         <div style={{ fontSize: 11, color: 'var(--light)', marginBottom: 5, fontWeight: 500 }}>
@@ -34,9 +36,15 @@ export default function ProductCard({ product: p }: { product: Product }) {
           {lang === 'fa' ? p.fa : p.de}
         </h3>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
-          <span className="d-font" style={{ fontSize: 22, fontWeight: 700, color: 'var(--pom)', letterSpacing: '-0.02em' }}>
-            €{p.price.toFixed(2)}
-          </span>
+          {p.price != null ? (
+            <span className="d-font" style={{ fontSize: 22, fontWeight: 700, color: 'var(--pom)', letterSpacing: '-0.02em' }}>
+              €{p.price.toFixed(2)}
+            </span>
+          ) : (
+            <span style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--gold)' }}>
+              {t.priceOnRequest}
+            </span>
+          )}
           <button
             className="btn btn-primary btn-sm"
             onClick={() => addToCart(p)}
