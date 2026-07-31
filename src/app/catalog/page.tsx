@@ -68,6 +68,10 @@ export default function CatalogPage() {
               <div className="catalog-grid">
                 {items.map(p => (
                   <div key={p.id} className="catalog-row">
+                    <span className="catalog-thumb">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={withBase(p.img || '')} alt="" loading="lazy" />
+                    </span>
                     <span style={{ fontSize:14, color:'var(--charcoal)', fontWeight:500 }}>{fa ? p.fa : p.de}</span>
                     <span className="catalog-dots" />
                     {p.price != null
