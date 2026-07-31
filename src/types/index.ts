@@ -94,7 +94,7 @@ export interface LocationT {
 export interface Translation {
   dir: 'rtl' | 'ltr';
   fontClass: string;
-  nav: { home: string; shop: string; cats: string; services: string; about: string; contact: string };
+  nav: { home: string; shop: string; cats: string; catalog: string; services: string; about: string; contact: string };
   langLabel: string;
   cartTitle: string;
   brandName: string;
