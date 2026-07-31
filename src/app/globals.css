@@ -420,5 +420,28 @@ body {
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
+/* ─── Catalog / menu page ────────────────────────────────────── */
+.catalog-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 34px; row-gap: 2px;
+}
+.catalog-row {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 7px 4px; border-radius: 8px;
+}
+.catalog-row:hover { background: rgba(184,137,46,.07); }
+.catalog-dots {
+  flex: 1; height: 1px; min-width: 18px;
+  border-bottom: 1px dotted var(--border);
+  transform: translateY(-3px);
+}
+@media print {
+  .no-print, header, .footer, .liquid-bg { display: none !important; }
+  .dark-lux { background: #fff !important; color: #000 !important; }
+  .dark-lux h1, .dark-lux p, .dark-lux span { color: #111 !important; }
+  .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+  body { background: #fff !important; }
+}
+
 /* ─── Misc ───────────────────────────────────────────────────── */
 .icon-box { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }

@@ -3,7 +3,7 @@ import { Translation } from '@/types';
 export const T: Record<'fa' | 'de', Translation> = {
   fa: {
     dir: 'rtl', fontClass: 'fa-font',
-    nav: { home: 'خانه', shop: 'فروشگاه', cats: 'دسته‌بندی‌ها', services: 'خدمات', about: 'درباره ما', contact: 'تماس با ما' },
+    nav: { home: 'خانه', shop: 'فروشگاه', cats: 'دسته‌بندی‌ها', catalog: 'کاتالوگ', services: 'خدمات', about: 'درباره ما', contact: 'تماس با ما' },
     langLabel: 'DE',
     cartTitle: 'سبد خرید',
     brandName: 'کیان مارکت',
@@ -106,7 +106,7 @@ export const T: Record<'fa' | 'de', Translation> = {
 
   de: {
     dir: 'ltr', fontClass: 'en-font',
-    nav: { home: 'Startseite', shop: 'Shop', cats: 'Kategorien', services: 'Dienste', about: 'Über uns', contact: 'Kontakt' },
+    nav: { home: 'Startseite', shop: 'Shop', cats: 'Kategorien', catalog: 'Katalog', services: 'Dienste', about: 'Über uns', contact: 'Kontakt' },
     langLabel: 'FA',
     cartTitle: 'Warenkorb',
     brandName: 'Kian Markt',

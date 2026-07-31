@@ -15,6 +15,7 @@ export default function Footer() {
     { href: '/',           label: t.nav.home },
     { href: '/shop',       label: t.nav.shop },
     { href: '/categories', label: t.nav.cats },
+    { href: '/catalog',    label: t.nav.catalog },
     { href: '/services',   label: t.nav.services },
     { href: '/about',      label: t.nav.about },
     { href: '/contact',    label: t.nav.contact },
