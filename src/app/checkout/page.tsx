@@ -15,7 +15,8 @@ export default function CheckoutPage() {
   const t = T[lang];
   const o = t.order;
   const c = t.checkout;
-  const sub = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  const sub = cart.reduce((s, i) => s + (i.price ?? 0) * i.qty, 0);
+  const hasUnpriced = cart.some(i => i.price == null);
 
   const [form, setForm] = useState({ firstName: '', lastName: '', address: '', postCode: '', phone: '' });
   const [error, setError] = useState('');
@@ -36,7 +37,8 @@ export default function CheckoutPage() {
     const times = fa ? '×' : 'x';
     const SEP = '----------------------------';
     const lines = cart.map((i, n) =>
-      `${n + 1}. ${fa ? i.fa : i.de}  (${times}${i.qty})  =  ${(i.price * i.qty).toFixed(2)} ${cur}`);
+      `${n + 1}. ${fa ? i.fa : i.de}  (${times}${i.qty})  =  ` +
+      (i.price != null ? `${(i.price * i.qty).toFixed(2)} ${cur}` : t.priceOnRequest));
     let msg = [
       `*${o.msgTitle}*`,
       SEP,
@@ -44,7 +46,8 @@ export default function CheckoutPage() {
       `*${o.msgProducts}:*`,
       ...lines,
       '',
-      `*${o.msgTotal}: ${sub.toFixed(2)} ${cur}*`,
+      sub > 0 ? `*${o.msgTotal}: ${sub.toFixed(2)} ${cur}*` : `*${o.msgTotal}: ${t.priceOnRequest}*`,
+      ...(hasUnpriced && sub > 0 ? [t.priceNote] : []),
       '',
       SEP,
       `${o.msgName}: ${form.firstName.trim()}`,
@@ -208,7 +211,9 @@ export default function CheckoutPage() {
                       <div style={{ fontSize:13, fontWeight:600, color:'var(--charcoal)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{lang === 'fa' ? i.fa : i.de}</div>
                       <div style={{ fontSize:11.5, color:'var(--light)' }}>×{i.qty}</div>
                     </div>
-                    <span className="d-font" style={{ fontSize:15, fontWeight:700, color:'var(--pom)' }}>€{(i.price * i.qty).toFixed(2)}</span>
+                    {i.price != null
+                      ? <span className="d-font" style={{ fontSize:15, fontWeight:700, color:'var(--pom)' }}>€{(i.price * i.qty).toFixed(2)}</span>
+                      : <span style={{ fontSize:11.5, fontWeight:600, color:'var(--gold)', whiteSpace:'nowrap' }}>{t.priceOnRequest}</span>}
                   </div>
                 ))}
               </div>
@@ -217,8 +222,14 @@ export default function CheckoutPage() {
                 <span>{t.delivery}</span><span style={{ color:'var(--sage)', fontWeight:600 }}>{t.freeShipping}</span>
               </div>
               <div style={{ display:'flex', justifyContent:'space-between', fontSize:18, fontWeight:700, color:'var(--charcoal)' }}>
-                <span>{t.total}</span><span className="d-font" style={{ color:'var(--pom)' }}>€{sub.toFixed(2)}</span>
+                <span>{t.total}</span>
+                {sub > 0
+                  ? <span className="d-font" style={{ color:'var(--pom)' }}>€{sub.toFixed(2)}</span>
+                  : <span style={{ fontSize:12.5, color:'var(--gold)' }}>{t.priceOnRequest}</span>}
               </div>
+              {hasUnpriced && sub > 0 && (
+                <p style={{ fontSize:11.5, color:'var(--gold)', fontWeight:600, lineHeight:1.7, marginTop:8 }}>{t.priceNote}</p>
+              )}
               <Link href="/cart" style={{ display:'inline-flex', alignItems:'center', gap:6, marginTop:18, fontSize:13, color:'var(--mid)', textDecoration:'none' }}>
                 <ArrowLeftIcon size={13} stroke="var(--mid)" /> {c.back}
               </Link>

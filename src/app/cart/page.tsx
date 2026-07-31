@@ -11,7 +11,8 @@ export default function CartPage() {
   const { cart, updateQty, removeFromCart } = useCart();
   const t = T[lang];
   const o = t.order;
-  const sub = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  const sub = cart.reduce((s, i) => s + (i.price ?? 0) * i.qty, 0);
+  const hasUnpriced = cart.some(i => i.price == null);
 
   return (
     <>
@@ -54,7 +55,11 @@ export default function CartPage() {
                     <span style={{ minWidth:22, textAlign:'center', fontWeight:700, fontSize:15 }}>{item.qty}</span>
                     <button className="qty-btn" onClick={() => updateQty(item.id, +1)}><PlusIcon size={14} stroke="var(--olive)" /></button>
                   </div>
-                  <span className="d-font" style={{ fontWeight:700, fontSize:18, color:'var(--pom)', minWidth:72 }}>€{(item.price * item.qty).toFixed(2)}</span>
+                  <span className="d-font" style={{ fontWeight:700, fontSize:18, color:'var(--pom)', minWidth:72 }}>
+                    {item.price != null
+                      ? `€${(item.price * item.qty).toFixed(2)}`
+                      : <span style={{ fontSize:12, fontWeight:600, color:'var(--gold)', fontFamily:'inherit' }}>{t.priceOnRequest}</span>}
+                  </span>
                   <button onClick={() => removeFromCart(item.id)} style={{ background:'var(--terra-fade)', color:'var(--terra)', border:'none', borderRadius:8, padding:'7px 10px', cursor:'pointer', display:'flex', alignItems:'center', gap:5, fontFamily:'inherit', fontSize:12, fontWeight:500 }}>
                     <TrashIcon size={13} stroke="var(--terra)" /> {t.remove}
                   </button>
@@ -68,15 +73,24 @@ export default function CartPage() {
               <h3 style={{ fontWeight:700, fontSize:17, marginBottom:24, color:'var(--charcoal)' }}>{t.orderSummary}</h3>
               <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
                 <div style={{ display:'flex', justifyContent:'space-between', fontSize:14, color:'var(--charcoal-m)' }}>
-                  <span>{t.subtotal}</span><span className="d-font" style={{ fontWeight:600 }}>€{sub.toFixed(2)}</span>
+                  <span>{t.subtotal}</span>
+                  {sub > 0
+                    ? <span className="d-font" style={{ fontWeight:600 }}>€{sub.toFixed(2)}</span>
+                    : <span style={{ fontSize:12, color:'var(--gold)', fontWeight:600 }}>{t.priceOnRequest}</span>}
                 </div>
                 <div style={{ display:'flex', justifyContent:'space-between', fontSize:14, color:'var(--charcoal-m)' }}>
                   <span>{t.delivery}</span><span style={{ color:'var(--sage)', fontWeight:600 }}>{t.freeShipping}</span>
                 </div>
                 <div className="divider" />
                 <div style={{ display:'flex', justifyContent:'space-between', fontSize:17, fontWeight:700, color:'var(--charcoal)' }}>
-                  <span>{t.total}</span><span className="d-font">€{sub.toFixed(2)}</span>
+                  <span>{t.total}</span>
+                  {sub > 0
+                    ? <span className="d-font">€{sub.toFixed(2)}</span>
+                    : <span style={{ fontSize:12.5, color:'var(--gold)' }}>{t.priceOnRequest}</span>}
                 </div>
+                {hasUnpriced && sub > 0 && (
+                  <p style={{ fontSize:12, color:'var(--gold)', fontWeight:600, lineHeight:1.7 }}>{t.priceNote}</p>
+                )}
               </div>
               <Link href="/checkout" className="btn btn-gold btn-full" style={{ marginTop:24, padding:'14px 0', fontSize:15.5, display:'flex', alignItems:'center', justifyContent:'center', gap:9, textDecoration:'none', borderRadius:12 }}>
                 {t.checkout.proceed} <ArrowRightIcon size={16} stroke="#fff" />

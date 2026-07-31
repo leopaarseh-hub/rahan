@@ -7,10 +7,10 @@ export interface Product {
   catId: number;
   catFa: string;
   catDe: string;
-  price: number;
-  bFa: string;
-  bDe: string;
-  emoji: string;
+  price?: number;
+  bFa?: string;
+  bDe?: string;
+  emoji?: string;
   imgBg: string;
   img?: string;
 }
@@ -19,7 +19,7 @@ export interface Category {
   id: number;
   fa: string;
   de: string;
-  emoji: string;
+  emoji?: string;
   color: string;
   bg: string;
   img?: string;
@@ -114,6 +114,10 @@ export interface Translation {
   sortBy: string;
   sortOpts: string[];
   addToCart: string;
+  priceOnRequest: string;
+  loadMore: string;
+  showingCount: string;
+  priceNote: string;
   all: string;
   noResults: string;
   cartEmpty: string;
